@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#2c4457">
+    <meta name="google-site-verification" content="9uDTXgYt6cLyIyEW8tmFensPSWjd_Yc3Xj_U_BoEsS0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta property="og:image" content="images/head_shot.jpg" />
+    <meta property="og:title" content="Yansen Zhang's Personal Website." />
+    <meta property="og:description" content="Hello, I'm Yansen Zhang (Forrest Stone) and good to see you!" />
+    <title>Yansen Zhang</title>
+    <link rel="stylesheet" href="github_widget/github-widget.css" type="text/css" />
+    <link rel="stylesheet" href="css/presentational.css">
+    <link rel="stylesheet" href="css/circular-images.css">
+</head>
+
+<body>
+    <div id="navbar">
+        <a href="#top">Home</a>
+        <a href="#Biography">Biography</a>
+        <a href="#Skills">Skills</a>
+        <!-- <a href="#Github Repositories">GithubRepos</a> -->
+        <a href="#Publications">Publications</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Notes & Github">Notes & Github</a>
+        <!-- <a href="#Open source code">Certification</a> -->
+        <a href="#Additional">Additional</a>
+        <!-- <a href="#Activities">Activities</a> -->
+        <!-- <a href="#Honours & Awards">Honours & Awards</a> -->
+    </div>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-200px";
+            }
+        }
+    </script>
+
+    <div class="header">
+        <div class="headerColumn">
+            <img class="circular--square" id="head_shot" src="images/head_shot.jpg" height="200">
+        </div>
+
+        <div class="headerColumn">
+            <p class="headertitle">Yansen Zhang（张岩森）</p>
+            <p class="headertext">Love life. Enjoy Research.</p>
+            <a class="headerButtonAction" href="mailto:zhangys7@mail2.sysu.edu.cn"><img src="images/email_logo.png"
+                    id="headerButton" height="45px"></a>
+            <a class="headerButtonAction" href="https://github.com/Forrest-Stone"><img src="images/github_logo.png"
+                    id="headerButton" height="45px"></a>
+            <a class="headerButtonAction" href="https://1drv.ms/b/s!AoD0B_BVFncdri-oq6b9VuUVSgz1?e=9cvf9K"><img
+                        src="images/CV_logo.png" id="headerButton" height="45px"></a>
+            <a class="headerButtonAction" href="https://1drv.ms/b/s!AoD0B_BVFncdrjBAmWbOAsqCzaxY?e=19wUpH"><img
+                    src="images/score_logo.png" id="headerButton" height="45px"></a>
+        </div>
+        <div class="headerButton">
+        </div>
+    </div>
+
+    <div class="section" id="Biography">
+        <h1>Biography</h1>
+        <p class="bioline">
+            &nbsp;&nbsp;&nbsp;&nbsp;I am currently a master student at the School of Computer Science and Engineering, Sun Yat-sen University by <i>Postgraduate Candidates Exempt from Admission Exam</i>. My academic supervisor is Prof. <a class="bioTextLink" href="https://cse.sysu.edu.cn/content/2514">Yubao Liu</a> and I am doing the research of graph-based sequential recommendation. I received the bachelor's degree from the School of Software College, Northeastern University. My academic Enlightenment Advisor was Prof. <a class="bioTextLink" href="https://guoguibing.github.io/">Guibing Guo</a> and followed him to research the topic of explainable recommendation. <br>
+
+            &nbsp;&nbsp;&nbsp;&nbsp;My research focused on sequence-aware recommendation based graph neural networks. In the process of research, I gradually became interested in <b>Graph Learning</b> and <b>Sequence Learning</b>, and want to do further research in these topics if I have a dream PhD career.
+        </p>
+
+        <div class="bioLogoColumn">
+            <img src="images/SYSU_logo.png" id="bioImage" height="160">
+            <p class="logoline">M.S. in Software Engineering<br>Sun Yat-sen University<br>Guangzhou, China<br>Sep 2019 - Jun 2022</p>
+        </div>
+
+        <div class="bioLogoColumn">
+            <img src="images/NEU_logo.png" id="bioImage" height="160">
+            <p class="logoline">B.S. in Software Engineering<br>Northeastern University<br>Shenyang, China<br>Sep 2015 - Jun 2019</p>
+        </div>
+    </div>
+
+    <hr class="heavy">
+
+    <div class="section" id="Skills">
+        <h1>Skills</h1>
+        <!-- <h2>Record my research life</h2> -->
+        <div class="projectNoImageTextColumn">
+            <p class="projectline">
+                <li> <b>Programming:</b> Python, C/C++, LATEX, Markdown, Matlab, R, JavaScript, SQL. </li>
+                <li> <b>Frameworks/Platforms:</b> PyTorch, Linux, TensorFlow, Keras. </li>
+                <li> <b>Software Tools:</b> Git, Visio, PhotoShop, MS Office. </li>
+                <li> <b>Languages:</b> Chinese (native), English (fluent), Japanese (basic). </li>
+                <li> <b>Soft Skills:</b> Self-motivated, Communication, Time management, Teamwork. </li>
+                <!-- <li> <b>Hobbies: </b> Basketball, Swimming, Mountain climbing, Reading detective fiction. </li>
+                <li> <b>Activities:</b> Volunteering (6 years), Rope skipping (2nd). </li> -->
+                <!-- <li> <b>Paper Notes:</b> I have read. </li> -->
+            </p>
+        </div>
+    </div>
+
+    <hr class="heavy">
+
+    <div class="section" id="Publications">
+        <h1>Publications</h1>
+
+        <h2>Self-Adaptive Graph Neural
+            Networks for Personalized Sequential Recommendation</h2>
+        <h3>ICONIP 2021</h3>
+        <div class="projectImageColumn">
+            <img src="images/SA-GNN.png" id="projectImage" width="360">
+        </div>
+        <div class="projectTextColumn">
+            <p class="projectline">
+                We propose a self-adaptive graph neural network with future contexts for sequential recommendation. SA-GNN applies a GNN model within both past and future contexts to model user dynamic interests, and utilizes a self-adaptive module and attention module to weaken the negative effect of unsuitable connections in item graph.
+            </p>
+
+            <p class="authorline"> Yansen Zhang, Chenhao Hu, Genan Dai, Weiyang Kong and <a class="bioTextLink"
+                    href="https://dblp.org/pid/30/2791.html">Yubao Liu</a>.
+                <br>[Supported by the National Nature Science Foundation of China.]
+            </p>
+            <a class="projectButtonAction" href="https://github.com/Forrest-Stone/SA-GNN">Paper</a>
+            <a class="projectButtonAction" href="https://github.com/Forrest-Stone/SA-GNN">Code</a>
+        </div>
+
+    </div>
+
+    <hr class="heavy">
+
+    <div class="section" id="Projects">
+        <h1>Projects</h1>
+
+        <h2>SIMGCN: Similarity-based Graph Convolution Networks for POI
+            Recommendation</h2>
+        <h3>Neurocomputing, 2021</h3>
+        <div class="projectImageColumn">
+            <img src="images/SIMGCN.png" id="projectImage" width="360">
+        </div>
+        <div class="projectTextColumn">
+            <p class="projectline">
+                We propose a novel model SIMGCN based on the integrated graph that contains the geographical influence among POIs. In our model, we propose adaptive propagation layers to jointly capture the users’explicit behavioral similarity, underlying similarity and geographical influence. Moreover, we try to speed up the training of the model by simplifying the graph convolution layers.
+                <!-- In SIMGCN, we incorporate the similarity computation into a simplified GCN to capture the complex underlying similarity. The enhanced GCN can not only speed up training but also enhance model performance. Besides, we incorporate the geographical influence to enhance the ability to capture underlying similarity. -->
+            </p>
+            <p class="authorline">Genan Dai, Yansen Zhang, Youming Ge and <a class="bioTextLink"
+                href="https://dblp.org/pid/30/2791.html">Yubao Liu</a>.
+            <!-- <a class="projectButtonAction" href="https://drive.google.com/file/d/1zC_vFjnTs9s74RT2SB_xEcDwKQv6sKQ_/view?usp=sharing">PDF</a> -->
+        </div>
+
+        <h2>Research and Implementation of Explainable Recommendation Based on Feature Fusion</h2>
+        <h3>Bachelor's Thesis, 2019</h3>
+        <div class="projectImageColumn">
+            <img src="images/Explainable.png" id="projectImage" width="360">
+        </div>
+        <div class="projectTextColumn">
+            <p class="projectline">
+                Aiming at the current opaque personalized recommendation, we proposed a explainable recommendation algorithm based on feature fusion, which uses the auxiliary information of users and items, combines with auto-encoder and tree model. An end-to-end model is designed to be transparent the recommendation process. The model is mainly from the perspective of system developers.
+                <!-- For the black box feature of deep learning model, the embedded feature and tree-based method are used to obtain feature interaction, and a self-transparent and explainable recommendation algorithm is designed. -->
+            </p>
+            <p class="authorline">Yansen Zhang.<br>Advisor: Prof. <a class="bioTextLink" href="https://scholar.google.com/citations?user=YMXJa2EAAAAJ&hl=en">Guibing Guo</a>.</p>
+            <!-- <a class="projectButtonAction" href="https://drive.google.com/file/d/1zC_vFjnTs9s74RT2SB_xEcDwKQv6sKQ_/view?usp=sharing">PDF</a> -->
+        </div>
+
+        <h2>Analysis of State Fragility Based On the Dynamic
+            Bi-level Network Model</h2>
+        <h3>Interdisciplinary Contest in Modeling, 2018</h3>
+        <div class="projectImageColumn">
+            <img src="images/ICM2018.png" id="projectImage" width="360">
+        </div>
+        <div class="projectTextColumn">
+            <p class="projectline">
+                We redefined the state fragility index, and modeled a dynamic bi-level network by the analytic hierarchy process to analysis the impact of climate change on a country's fragility level. A concept of state capacity is defined to revise the parameters in the Logistic Regression Model. Then horizontal and vertical methods are used to analyze the influence as well. Also, a Cobb-Douglas Function is introduced to help the government calculate the cost and gain of government’s actions.
+                <!-- From the model, it can conclude that climate change play an important role in the ˘ainstability of a country. The effects of Climate Change on the instability of a country will become more and more serious. -->
+
+                <!-- 阅相关资料，重新定义了国家脆弱性指数，利用层次分析法建立了动态双层网络模型分析气候变化对国家脆弱性的影响；并利用Logistics回归模型制定了脆弱性评估的标准；此外研究特定城市，从纵向和横向两个角度，定义了国家承载力来刻画某国对气候变化的适应能力；为了量化气候变化对国家脆弱性的影响，利用Cobb-Douglas生产函数建立模型来预测国家脆弱性的变化。 -->
+            </p>
+            <p class="authorline">Yansen Zhang, Junhao Wang and Qiuyao Zhang.<br>Advisor: Guisong Chang.</p>
+            <!-- <a class="projectButtonAction"
+                href="https://drive.google.com/file/d/1NLrT50UaFifBsIi-Yc9W2Gy-PUMuDxg9/view?usp=sharing">Slides</a> -->
+        </div>
+
+        <h2>Logistics Management System & Highway Intelligent Toll System</h2>
+        <h3>C++ Project Training, 2018</h3>
+        <div class="projectImageColumn">
+            <img src="images/neusoft.png" id="projectImage" width="360">
+        </div>
+        <div class="projectTextColumn">
+            <p class="projectline">
+                We developed a <i>Logistics Management System</i> and a <i>Highway Intelligent Toll System</i> based on Qt platform and C++ programming Language. In the first project, we developed an intelligent logistics system for sellers. In the second project, we realized real-time license plate recognition by using the open-cv library.
+            </p>
+            <p class="authorline">Yansen Zhang, Wen Li, Zhaolin Zhang and Zhida Zhong.<br>Advisor: Xinyan Li.</p>
+            <a class="projectButtonAction" href="https://github.com/Forrest-Stone/ourFinalV1">First Materials</a>
+            <a class="projectButtonAction" href="https://github.com/Forrest-Stone/Server">Second Materials</a>
+        </div>
+    </div>
+
+    <hr class="heavy">
+
+    <div class="section" id="Notes & Github">
+        <h1>Notes & Github</h1>
+        <!-- <h2>Record my research life</h2> -->
+        <div class="projectNoImageTextColumn">
+            <p class="projectline">
+                <li> <b>Paper Notes:</b> <a class="textLink" href="https://github.com/Forrest-Stone/PaperNotes">Some representative papers</a> I have read. </li>
+                <li> <b>Deep Learning Notes:</b> <a class="textLink"
+                    href="https://github.com/Forrest-Stone/DL">Deep Learning Specialization</a> by Andrew Ng, Kian Katanforoosh and Younes Bensouda Mourri in DeepLearning.AI. </li>
+                <li> <b>Open Source Code for MAGNN:</b> <a class="textLink" href="https://github.com/Forrest-Stone/MAGNN">The implementation code</a> of <i>Memory Augmented Graph Neural Networks for Sequential Recommendation</i> in AAAI 2020. </li>
+                <li> <b>Code Template:</b> <a class="textLink" href="https://github.com/Forrest-Stone/code-litter">Some code for processing data</a> that may be used in research. </li>
+            <!-- <p class="authorline">TensorFlow, 28493329, 2021.</p> -->
+            </p>
+            <!-- <a class="projectButtonAction"
+                href="https://www.credential.net/6a216cc0-2820-4325-82d5-634dca3c6791">Detail</a> -->
+        </div>
+    </div>
+
+    <hr class="heavy">
+
+    <div class="section" id="Additional">
+        <h1>Additional</h1>
+
+        <h2>Teaching Experience</h2>
+        <div class="projectNoImageTextColumn">
+            <p class="projectline">
+                <li> <b>Teaching Assistant:</b> 2019-2020, Sun Yat-sen University
+                    <ul>
+                        <li>I am a teaching assistant of <i>Mathematical Analysis</i>, and assisted the Professor in correcting homework. </li>
+                        <li>Recorded problems and helped undergraduate students understand the mathematical concepts, computational methods and proof procedures in office hour. </li>
+                    </ul>
+                 </li>
+                <li> <b>Personal Tutor:</b> 2015-2019, self employed
+                    <ul>
+                        <li>I totured high school students (one is a freshman at the University of Waterloo) <i>Mathematics</i>, <i>Physics</i> and <i>Chemistry</i>. </li>
+                       <li>I scheduled lessons and prepared lesson plans. I accommodated the specific needs of my students to provide different kinds of teaching, such as practicing exam technique or explaining specific topics in detail.</li>
+                       <!-- <li>I also created and provided my own teaching aid, and additional practice exercises for the students.</li> -->
+                    </ul>
+                </li>
+            </p>
+        </div>
+
+        <h2>Activities</h2>
+
+        <h3>Volunteering</h3>
+        <div class="projectImageColumn">
+            <img src="images/Volunteering.png" id="projectImage" width="300">
+        </div>
+        <div class="projectTextColumn">
+            <p class="projectline">
+                <li>I was a member of <i>Public Relations Department</i> of Northeastern University Volunteers Association.</li>
+                <li>I organized and participated in many volunteer activities, such as campus marathon, going to nursing home, potted plant exchange and so on.</li>
+                <li>I love to help others and sincerely hope that people can help each other.</li>
+            </p>
+        </div>
+
+        <h3>Hobbies</h3>
+        <div class="projectImageColumn">
+            <img src="images/Sports.png" id="projectImage" width="300">
+        </div>
+        <div class="projectTextColumn">
+            <p class="projectline">
+                <li>I love <b>sports</b>. I often go to play basketball with my friends in the lab. Moreover, I sometimes go hiking and go to the gym to exercise.</li>
+                <li>I love <b>reading</b>, especially these detective novels. I have read over 120 novels in the university.</li>
+            </p>
+        </div>
+
+        <h2>Honours & Awards</h2>
+        <div class="projectNoImageTextColumn">
+            <p class="projectline">
+                <li> <b>Graduate Student Second-class Academic Scholarship:</b> 2021, Sun Yat-sen University </li>
+                <li> <b>Graduate Student First-class Academic Scholarship:</b> 2020, Sun Yat-sen University </li>
+                <li> <b>Interdisciplinary Contest in Modeling:</b> 2018, international-level, Honorable Mention </li>
+                <li> <b>First Prize of Mathematical Modeling Contest:</b> 2017, Northeastern University </li>
+                <li> <b>Excellent League Member Model:</b> 2017–2018, Northeastern University </li>
+                <li> <b>The Second Prize Scholarship:</b> 2015–2018, Northeastern University </li>
+                <li> <b>National Encouragement Scholarship:</b> 2015-2018, Northeastern University </li>
+                <li> <b>Outstanding Dormitory:</b> 2015-2018, Northeastern University </li>
+                <li> <b>Excellent Students Awards:</b> 2015–2017, Northeastern University </li>
+                <li> <b>28th High School Olympic Chemical Competition:
+                </b>2014, provincial level, Third Prize</li>
+            </p>
+        </div>
+
+        <h2>Contact Information</h2>
+        <div class="projectNoImageTextColumn">
+            <p class="projectline">
+                <li> <b>Phone:</b> (+86) 156-2629-3898 </li>
+                <li> <b>Email:</b> zhangys7@mail2.sysu.edu.cn </li>
+                <!-- <li> <b>Address:</b> Xiaoguwei Island, Panyu District, Guangzhou, 510006, P. R. China </li> -->
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <a class="topButtonAction" href="#top">BACK TO TOP</a>
+    </div>
+
+</body>
+
+</html>
