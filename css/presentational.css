@@ -595,8 +595,6 @@ hr.heavy {
   .pstext1 {
     padding: 1rem;
     font-size: 8vw;
-    /* margin: 0%; */
-    /* letter-spacing: 0vw; */
   }
 
   .pstext2 {
@@ -605,9 +603,6 @@ hr.heavy {
     line-height: normal;
     line-height: 1.3rem;
     max-width: fit-content;
-    /* margin: 0%; */
-    /* letter-spacing: 0vw; */
-
   }
 
   .pstext3 {
@@ -616,9 +611,5 @@ hr.heavy {
     padding-top: 0rem;
     padding-bottom: 0rem;
     font-size: 7vw;
-
-    /* margin: 0%; */
-    /* letter-spacing: 0vw; */
-
   }
 }
