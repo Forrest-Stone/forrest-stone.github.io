@@ -588,8 +588,8 @@ hr.heavy {
   }
 
   .container-fluid {
-    padding: 0vw;
-    background-color: red;
+    padding: 0.2vw;
+    /* background-color: red; */
   }
 
   .pstext1 {
