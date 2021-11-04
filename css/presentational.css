@@ -593,24 +593,24 @@ hr.heavy {
   }
 
   .pstext1 {
-    padding: 0%;
-    font-size: 5vw;
-    margin: 0%;
+    padding: 0.2vw;
+    font-size: 7vw;
+    /* margin: 0%; */
     /* letter-spacing: 0vw; */
   }
 
   .pstext2 {
     padding: 0%;
-    font-size: 2vw;
-    margin: 0%;
+    font-size: 4vw;
+    /* margin: 0%; */
     /* letter-spacing: 0vw; */
 
   }
 
   .pstext3 {
     padding: 0%;
-    font-size: 4vw;
-    margin: 0%;
+    font-size: 5vw;
+    /* margin: 0%; */
     /* letter-spacing: 0vw; */
 
   }
