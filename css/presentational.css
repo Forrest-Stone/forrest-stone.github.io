@@ -424,6 +424,18 @@ hr.heavy {
     background-color: #11272b;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3);
   }
+
+  .pstext1 {
+    padding: 1vw 0vw 1vw 0vw;
+  }
+
+  .pstext2 {
+    padding: 1vw 0vw 1vw 0vw;
+  }
+
+  .pstext3 {
+    padding: 1vw 0vw 1vw 0vw;
+  }
 }
 
 @media only screen and (max-width: 735px) {
@@ -508,6 +520,21 @@ hr.heavy {
     font-size: 4vw;
     border-radius: unset;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .pstext1 {
+    padding: 1vw 0vw 1vw 0vw;
+    font-size: 8vw;
+  }
+
+  .pstext2 {
+    padding: 1vw 0vw 1vw 0vw;
+    font-size: 5vw;
+  }
+
+  .pstext3 {
+    padding: 1vw 0vw 1vw 0vw;
+    font-size: 6vw;
   }
 }
 
