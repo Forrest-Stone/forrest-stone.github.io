@@ -588,13 +588,13 @@ hr.heavy {
   }
 
   .container-fluid {
-    padding:0vw;
+    padding: 0vw;
   }
 
   .pstext1 {
     padding: 0%;
     font-size: 5vw;
-    margin: 0%;
+    margin:-3em;
     /* letter-spacing: 0vw; */
   }
 
