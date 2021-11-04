@@ -371,6 +371,45 @@ hr.heavy {
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
 
+.container-fluid{
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  padding-bottom: 3.5em;
+  /* margin-top: 50px; */
+  /* background-color: aliceblue; */
+  /* padding: 30px; */
+}
+.pstext1{
+  /* padding: 1.5em; */
+  font-size: 35px;
+  /* padding:0%; */
+  padding-left: 3.4em;
+  padding-right: 3.4em;
+  padding-top: 2em;
+  margin-bottom: 1em;
+  font-family: "Noto Sans Bold", sans-serif;
+}
+
+.pstext2{
+  /* padding: 2.0em; */
+  font-size: 22.5px;
+  margin-bottom: -2em;
+  padding-top: 0em;
+  padding-left: 5.3em;
+  /* padding-right: 4.8em; */
+  max-width: 80%;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1.8rem;
+  /* padding-bottom: 0em; */
+}
+
+.pstext3{
+  /* padding: 1.5em; */
+  font-size: 28px;
+  /* padding:0%; */
+  padding-left: 4.3em;
+  padding-right: 3.4em;
+}
 
 /* Pad */
 @media only screen and (max-width: 1024px) {
@@ -442,6 +481,10 @@ hr.heavy {
   .bioLogoColumn {
     display: unset;
   }
+  .container-fluid {
+    padding: 0%;
+  }
+
   .pstext1 {
     padding: 0%;
     font-size: 6vw;
@@ -463,9 +506,6 @@ hr.heavy {
     margin: 0%;
     /* letter-spacing: 0vw; */
 
-  }
-  .container-fluid {
-    padding: 0%;
   }
 }
 
@@ -547,16 +587,20 @@ hr.heavy {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
   }
 
+  .container-fluid {
+    padding:0vw;
+  }
+
   .pstext1 {
     padding: 0%;
-    font-size: 6vw;
+    font-size: 5vw;
     margin: 0%;
     /* letter-spacing: 0vw; */
   }
 
   .pstext2 {
     padding: 0%;
-    font-size: 4vw;
+    font-size: 2vw;
     margin: 0%;
     /* letter-spacing: 0vw; */
 
@@ -564,49 +608,9 @@ hr.heavy {
 
   .pstext3 {
     padding: 0%;
-    font-size: 2vw;
+    font-size: 4vw;
     margin: 0%;
     /* letter-spacing: 0vw; */
 
   }
-  .container-fluid {
-    padding: 0%;
-  }
 }
-
-.pstext1{
-  /* padding: 1.5em; */
-  font-size: 35px;
-  /* padding:0%; */
-  padding-left: 3.4em;
-  padding-right: 3.4em;
-  padding-top: 2em;
-  margin-bottom: 1em;
-  font-family: "Noto Sans Bold", sans-serif;
-}
-
-.pstext3{
-  /* padding: 1.5em; */
-  font-size: 28px;
-  /* padding:0%; */
-  padding-left: 4.3em;
-  padding-right: 3.4em;
-  /* padding-top: 2em; */
-  /* margin-bottom: 1em; */
-  /* font-family: "Noto Sans Bold", sans-serif; */
-}
-
-
-.pstext2{
-  /* padding: 2.0em; */
-  font-size: 22.5px;
-  margin-bottom: -2em;
-  padding-top: 0em;
-  padding-left: 5.3em;
-  /* padding-right: 4.8em; */
-  max-width: 80%;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.8rem;
-  /* padding-bottom: 0em; */
-}
-
