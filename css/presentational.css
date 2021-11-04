@@ -541,6 +541,9 @@ hr.heavy {
     letter-spacing: 0vw;
 
   }
+  .container-fluid {
+    padding: 0vw 0vw 0vw 0vw;
+  }
 }
 
 .pstext1{
