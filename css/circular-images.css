@@ -29,3 +29,12 @@
   width: 100%;
   height: auto;
 }
+
+.container-fluid{
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  padding-bottom: 3.5em;
+  /* margin-top: 50px; */
+  /* background-color: aliceblue; */
+  /* padding: 30px; */
+}
