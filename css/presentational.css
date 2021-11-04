@@ -523,18 +523,18 @@ hr.heavy {
   }
 
   .pstext1 {
-    padding: 1vw 0vw 1vw 0vw;
-    font-size: 8vw;
+    padding: 0.2vw 0vw 0.2vw 0vw;
+    font-size: 7vw;
   }
 
   .pstext2 {
-    padding: 1vw 0vw 1vw 0vw;
-    font-size: 5vw;
+    padding: 0.2vw 0vw 0.2vw 0vw;
+    font-size: 3vw;
   }
 
   .pstext3 {
-    padding: 1vw 0vw 1vw 0vw;
-    font-size: 6vw;
+    padding: 0.2vw 0vw 0.2vw 0vw;
+    font-size: 5vw;
   }
 }
 
