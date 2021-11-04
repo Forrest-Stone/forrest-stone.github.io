@@ -525,16 +525,21 @@ hr.heavy {
   .pstext1 {
     padding: 0vw 0vw 0vw 0vw;
     font-size: 6vw;
+    letter-spacing: 0vw;
   }
 
   .pstext2 {
     padding: 0vw 0vw 0vw 0vw;
     font-size: 2vw;
+    letter-spacing: 0vw;
+
   }
 
   .pstext3 {
     padding: 0vw 0vw 0vw 0vw;
     font-size: 4vw;
+    letter-spacing: 0vw;
+
   }
 }
 
