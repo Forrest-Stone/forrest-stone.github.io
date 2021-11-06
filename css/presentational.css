@@ -499,7 +499,10 @@ hr.heavy {
   }
 
   .pstext1 {
-    padding: 1rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 8vw;
   }
 
@@ -604,7 +607,10 @@ hr.heavy {
 
   .pstext1 {
     /* padding: 1rem; */
-    padding-top: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 8vw;
   }
 
