@@ -603,7 +603,7 @@ hr.heavy {
   }
 
   .pstext1 {
-    padding: 1rem;
+    /* padding: 1rem; */
     padding-top: 2rem;
     font-size: 8vw;
   }
