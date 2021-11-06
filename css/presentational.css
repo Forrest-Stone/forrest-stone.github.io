@@ -479,7 +479,7 @@ hr.heavy {
     padding: 1rem;
     font-size: 5.5vw;
     max-width: fit-content;
-    line-height: 1.75rem;
+    line-height: normal;
     /* margin: 0%; */
     /* letter-spacing: 0vw; */
   }
@@ -497,7 +497,7 @@ hr.heavy {
     display: unset;
   }
   .container-fluid {
-    padding: 0%;
+    padding: 0.2vw;
   }
 
   .pstext1 {
