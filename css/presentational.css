@@ -471,8 +471,6 @@ hr.heavy {
   .pstext1 {
     padding: 1rem;
     font-size: 8vw;
-    /* margin: 0%; */
-    /* letter-spacing: 0vw; */
   }
 
   .pstext2 {
@@ -480,15 +478,15 @@ hr.heavy {
     font-size: 5.5vw;
     max-width: fit-content;
     line-height: normal;
-    /* margin: 0%; */
-    /* letter-spacing: 0vw; */
   }
 
   .pstext3 {
-    padding: 0rem, 0rem, 1rem, 1rem;
+    /* padding: 0rem, 0rem, 1rem, 1rem; */
     font-size: 7vw;
-    /* margin: 0%; */
-    /* letter-spacing: 0vw; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
   }
 }
 
@@ -503,24 +501,21 @@ hr.heavy {
   .pstext1 {
     padding: 1rem;
     font-size: 8vw;
-    /* margin: 0%; */
-    /* letter-spacing: 0vw; */
   }
 
   .pstext2 {
     padding: 1rem;
     font-size: 5.5vw;
     max-width: fit-content;
-    line-height: 1,75rem;
-    /* margin: 0%; */
-    /* letter-spacing: 0vw; */
+    line-height: normal;
   }
 
   .pstext3 {
-    padding: 0rem, 0rem, 1rem, 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     font-size: 7vw;
-    /* margin: 0%; */
-    /* letter-spacing: 0vw; */
   }
 }
 
