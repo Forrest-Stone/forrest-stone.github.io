@@ -479,9 +479,9 @@ hr.heavy {
     padding: 1rem;
     font-size: 5.5vw;
     max-width: fit-content;
+    line-height: 1.75rem;
     /* margin: 0%; */
     /* letter-spacing: 0vw; */
-
   }
 
   .pstext3 {
@@ -489,7 +489,6 @@ hr.heavy {
     font-size: 7vw;
     /* margin: 0%; */
     /* letter-spacing: 0vw; */
-
   }
 }
 
@@ -512,9 +511,9 @@ hr.heavy {
     padding: 1rem;
     font-size: 5.5vw;
     max-width: fit-content;
+    line-height: 1,75rem;
     /* margin: 0%; */
     /* letter-spacing: 0vw; */
-
   }
 
   .pstext3 {
@@ -522,7 +521,6 @@ hr.heavy {
     font-size: 7vw;
     /* margin: 0%; */
     /* letter-spacing: 0vw; */
-
   }
 }
 
