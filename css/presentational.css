@@ -604,13 +604,14 @@ hr.heavy {
 
   .pstext1 {
     padding: 1rem;
+    padding-top: 2rem;
     font-size: 8vw;
   }
 
   .pstext2 {
     padding: 1rem;
     font-size: 5.6vw;
-    line-height: normal;
+    /* line-height: normal; */
     line-height: 1.4rem;
     max-width: fit-content;
   }
