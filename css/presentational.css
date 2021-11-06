@@ -486,23 +486,23 @@ hr.heavy {
   }
 
   .pstext1 {
-    padding: 0%;
-    font-size: 6vw;
+    padding: 1rem, 1rem, 1rem, 1rem;
+    font-size: 8vw;
     margin: 0%;
     /* letter-spacing: 0vw; */
   }
 
   .pstext2 {
-    padding: 0%;
-    font-size: 2vw;
+    padding: 1rem, 1rem, 1rem, 1rem;
+    font-size: 5.5vw;
     margin: 0%;
     /* letter-spacing: 0vw; */
 
   }
 
   .pstext3 {
-    padding: 0%;
-    font-size: 4vw;
+    padding: 1rem, 1rem, 1rem, 1rem;
+    font-size: 7vw;
     margin: 0%;
     /* letter-spacing: 0vw; */
 
