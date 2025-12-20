@@ -45,7 +45,7 @@ function updateLastEdited() {
 
     el.textContent =
         "Last edited on " + m + " " + day + suffix(day) + " " + y +
-        " " + hh + ":" + mm + " (Time Zone: HKT).";
+        " " + hh + ":" + mm + ".";
 }
 
 // DOM 加载完成后自动执行
