@@ -3,7 +3,7 @@
 // 小屏幕打开 / 关闭左侧导航栏
 function openNav() {
     var menu = document.getElementById("layout-menu");
-    if (window.innerWidth <= 1200 && menu) {
+    if (window.innerWidth <= 992 && menu) {
         menu.classList.toggle("open");
     }
 }
@@ -11,7 +11,7 @@ function openNav() {
 // 预留的关闭函数（目前没用到，可以在将来调用）
 function closeNav() {
     var menu = document.getElementById("layout-menu");
-    if (window.innerWidth <= 1200 && menu) {
+    if (window.innerWidth <= 992 && menu) {
         menu.classList.remove("open");
     }
 }

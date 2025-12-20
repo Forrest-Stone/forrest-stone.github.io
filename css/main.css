@@ -476,7 +476,7 @@ div#text-container h3 {
 }
 
 /* 小屏幕显示汉堡按钮 */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
     .openbtn {
         font-size: 26px;
         cursor: pointer;
@@ -494,7 +494,7 @@ div#text-container h3 {
 
 /* ================= 小屏幕布局：导航插在 header 和内容之间 ================= */
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 992px) {
 
     div#layout-menu-container {
         width: 100%;
