@@ -1,0 +1,637 @@
+/* Default css file for jemdoc. */
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                 Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+                 Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+                 "Segoe UI Symbol";
+    padding: 0;
+    margin: 0;
+}
+
+div#main-container {
+    min-height: 100vh;
+    background: white;
+    margin: auto;
+}
+
+/* ================= 顶部栏 ================= */
+
+div#header-container {
+    width: 100%;
+    height: 70px;
+}
+
+div#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background: #f6f8fa;
+    border-bottom: 0.8px solid #e1e4e8;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* 左侧标题容器 */
+div#header-icon-text-container {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 100%;
+}
+
+/* 旧 icon，直接隐藏 */
+div#header-icon-container {
+    height: 45px;
+    width: 45px;
+    display: none;
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* 顶栏标题 */
+div#header-text-container {
+    padding: 0;
+    margin: 0;
+    height: auto;
+    color: #24292e;
+    font-size: 22px;
+}
+
+div#header-text-container a {
+    color: #24292e;
+}
+
+div#header-text-container a:hover {
+    color: #24292e;
+}
+
+/* 顶栏右侧（汉堡按钮容器） */
+div#main {
+    margin: 0;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+/* ================= 总体布局 ================= */
+
+div#layout {
+    width: 100vw;
+    min-height: calc(100vh - 70px);
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+/* 左侧导航容器 */
+div#layout-menu-container {}
+
+/* 左侧导航（桌面端） */
+div#layout-menu {
+    padding: 0 0 25px 0;
+    background: #f6f8fa;
+    border-right: 0.8px solid #e1e4e8;
+    width: 280px;
+    min-width: 280px;
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 70px;
+    left: 0;
+    overflow: auto;
+}
+
+#layout-menu a {
+    padding: 0px;
+    line-height: 2;
+}
+
+/* 内容区域容器（桌面端） */
+div#layout-content-container {
+    width: calc(100vw - 280px);
+    min-height: calc(100vh - 70px);
+    margin-left: 280px;
+    background: none;
+    text-align: left;
+    display: block;
+}
+
+/* 实际内容 */
+div#layout-content {
+    min-height: calc(100vh - 240px);
+    padding-top: 16px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    min-width: 200px;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* ================= 链接、标题等 ================= */
+
+tt {
+    background: #f3f5f7;
+    color: black;
+}
+
+pre, tt {
+    padding: 5px 5px 2px 5px;
+    font-size: 87.5%;
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    border-radius: 5px;
+    line-height: 1.5;
+    overflow: scroll;
+}
+
+a, a > tt {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover, a:hover > tt {
+    color: #ea4aaa;
+}
+
+/* 侧栏当前页高亮 */
+#layout-menu a.current:link, #layout-menu a.current:visited {
+    color: #586069;
+    font-weight: 600;
+}
+
+#layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+#layout-menu a:hover {
+    color: #ea4aaa;
+    text-decoration: none;
+}
+
+/* 菜单分类标题 */
+div.menu-category {
+    margin-top: 16px;
+    padding-top: 8px;
+    padding-bottom: 0.1em;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 18px;
+    line-height: 2;
+    border-top: 0.8px solid #e1e4e8;
+}
+
+/* 第一个分类（About）不要上边线、不留额外空白 */
+div.menu-category:first-of-type {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* 菜单项 */
+div.menu-item {
+    font-size: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+div#toptitle {
+    padding-bottom: 0.2em;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+div#toptitle + h2,
+div#toptitle + h3 {
+    margin-top: -0.7em;
+}
+
+div#subtitle {
+    margin-top: 0.0em;
+    margin-bottom: 0.0em;
+    padding-top: 0em;
+    padding-bottom: 0.1em;
+}
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+h1, h2, h3 {
+    padding-bottom: 0.2em;
+    line-height: 1.25;
+    padding-top: 0.5em;
+    border-bottom: 0.7px solid #e1e4e8;
+    font-weight: 400;
+}
+
+h1 { font-size: 32px; }
+
+h2 {
+    padding-top: 0.8em;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+h2 + h3 {
+    padding-top: 4px;
+}
+
+h3 {
+    font-size: 20px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: none;
+}
+
+/* 内容区域第一个标题去掉额外 margin，减少大片空白 */
+#layout-content h1:first-child,
+#layout-content h2:first-child,
+#layout-content h3:first-child {
+    margin-top: 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0.0em;
+    margin-bottom: 0.8em;
+    padding: 0;
+    text-align: justify;
+}
+
+pre {
+    padding: 0;
+    margin: 0;
+}
+
+/* ================= footer ================= */
+
+div#footer-container {}
+
+div#footer {
+    font-size: small;
+    color: #c0c0c0;
+    min-width: 200px;
+    max-width: 850px;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+div#footer a {
+    color: #80a0b0;
+}
+
+div#footer a:hover {
+    color: #ea4aaa;
+}
+
+div#footer-text {
+    line-height: 30px;
+}
+
+/* ================= 列表、表格等 ================= */
+
+ul, ol, dl {
+    margin-top: 0.2em;
+    padding-top: 0;
+    margin-bottom: 0.8em;
+}
+
+dt {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+dl {
+    margin-left: 20px;
+}
+
+dd {
+    color: #222222;
+}
+
+dd > *:first-child {
+    margin-top: 0;
+}
+
+ul {
+    list-style-position: outside;
+    list-style-type: square;
+}
+
+p + ul, p + ol {
+    margin-top: -0.5em;
+}
+
+li ul, li ol {
+    margin-top: -0.3em;
+}
+
+ol {
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+
+li p, dd p {
+    margin-bottom: 0.3em;
+}
+
+ol ol { list-style-type: lower-alpha; }
+ol ol ol { list-style-type: lower-roman; }
+
+div.codeblock {}
+
+p + div.codeblock {
+    margin-top: 0.6em;
+}
+
+div.codeblock,
+div.infoblock {
+    margin-right: 0%;
+    margin-top: 1.2em;
+    margin-bottom: 1.3em;
+}
+
+div.blocktitle {
+    color: #0366d6;
+    font-size: 20px;
+    line-height: 2;
+}
+
+div.blockcontent {
+    padding: 10px;
+}
+
+div.infoblock > div.blockcontent {
+    background: #fffbdd;
+    border: 1px solid #f9c513;
+    border-radius: 9px;
+    color: #f9c513;
+}
+
+div.blockcontent p + ul,
+div.blockcontent p + ol {
+    margin-top: 0.4em;
+}
+
+div.infoblock p {
+    margin-bottom: 0em;
+}
+
+div.infoblock li p,
+div.infoblock dd p {
+    margin-bottom: 0.5em;
+}
+
+div.infoblock p + p {
+    margin-top: 0.8em;
+}
+
+div.codeblock > div.blockcontent {
+    border: none;
+    border-radius: 10px;
+    background: #f6f8fa;
+}
+
+span.pycommand { color: #000070; }
+span.statement { color: #008800; }
+span.builtin  { color: #000088; }
+span.special  { color: #990000; }
+span.operator { color: #880000; }
+span.error    { color: #aa0000; }
+span.comment,
+span.comment > *,
+span.string,
+span.string > * { color: #606060; }
+
+@media print {
+    #layout-menu { display: none; }
+}
+
+/* ================= 顶部头像 + 文本 ================= */
+
+/* 头像 + 文字的横向布局（桌面端） */
+div#text-img-container {
+    display: flex;
+    align-items: flex-start;    /* 文字和头像顶部对齐 */
+    padding: 0;
+    margin: 0 0 24px 0;
+}
+
+/* 左侧头像 */
+div#img-container {
+    flex: 0 0 auto;
+    padding-top: 0;
+    text-align: center;
+    margin-right: 20px;          /* 图片和文字之间的空隙 */
+}
+
+/* 右侧文字块 */
+div#text-container {
+    flex: 1 1 auto;
+    padding-top: 0;
+}
+
+/* 姓名标题 */
+div#text-container h1 {
+    border-bottom: none;
+    margin: 0 0 6px 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+/* 备用 h2，不加下划线（目前没用） */
+div#text-container h2 {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* PhD 那一行 */
+div#text-container h3 {
+    border-bottom: none;
+    margin: 0 0 8px 0;
+    padding: 0;
+}
+
+/* ================= 汉堡按钮 ================= */
+
+/* 大屏幕：隐藏汉堡按钮 */
+.openbtn {
+    font-size: 0;
+    background: none;
+    color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* 小屏幕显示汉堡按钮 */
+@media screen and (max-width: 1200px) {
+    .openbtn {
+        font-size: 26px;
+        cursor: pointer;
+        background: none;
+        color: #24292e;
+        padding: 8px 9px 8px 9px;
+        border: none;
+        width: 45px;
+    }
+
+    .openbtn:hover {
+        background-color: #e1e4e8;
+    }
+}
+
+/* ================= 小屏幕布局：导航插在 header 和内容之间 ================= */
+
+@media screen and (max-width: 1200px) {
+
+    div#layout-menu-container {
+        width: 100%;
+    }
+
+    /* 默认收起，展开时用 .open 显示 */
+    div#layout-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        border-right: none;
+        box-shadow: none;
+        display: none;
+        padding-top: 0;
+    }
+
+    div#layout-menu.open {
+        display: block;
+    }
+
+    /* 内容区域全宽，紧跟在导航之后 */
+    div#layout-content-container {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+/* 极小屏幕微调 */
+@media screen and (max-width: 700px) {
+    img {
+        margin-right: 0px;
+    }
+
+    p {
+        text-align: left;
+    }
+
+    div#layout-content {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 15px;
+        min-height: calc(100vh - 190px);
+    }
+
+    div#footer {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 16px;
+        padding-bottom: 15px;
+    }
+
+    /* 小屏幕：头像和文字上下排、居中 */
+    div#text-img-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div#img-container {
+        padding-top: 0;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    div#text-container h1,
+    div#text-container h2,
+    div#text-container h3 {
+        text-align: center;
+    }
+}
+
+/* ================= members ================= */
+
+div#member-container {
+    text-align: center;
+}
+
+div#member {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+div#member img {
+    width: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+
+div#member p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ================= Group Outings ================= */
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 23%;
+    flex: 23%;
+    max-width: 23%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

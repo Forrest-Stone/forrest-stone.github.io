@@ -1,383 +1,164 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="theme-color" content="#2c4457">
-    <meta name="google-site-verification" content="9uDTXgYt6cLyIyEW8tmFensPSWjd_Yc3Xj_U_BoEsS0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta property="og:image" content="images/head_shot.jpg" />
-    <meta property="og:title" content="Yansen Zhang's Personal Website." />
-    <meta property="og:description" content="Hello, I'm Yansen Zhang (Forrest Stone) and good to see you!" />
-    <title>Yansen Zhang</title>
-    <link rel="stylesheet" href="github_widget/github-widget.css" type="text/css" />
-    <link rel="stylesheet" href="css/presentational.css">
-    <link rel="stylesheet" href="css/circular-images.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="icon" href="./images/symbol_logo.svg">
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <title>Yansen Zhang's Homepage</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"
+        async="async"></script>
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
+</script>
 </head>
 
 <body>
-    <div id="navbar">
-        <a href="#top">Home</a>
-        <a href="#Biography">Biography</a>
-        <!-- <a href="#Github Repositories">GithubRepos</a> -->
-        <a href="#Publications">Publications</a>
-        <a href="#Internship">Internship</a>
-        <!-- <a href="#Notes & Github">Notes & Github</a> -->
-        <!-- <a href="#Open source code">Certification</a> -->
-        <a href="#Skills">Skills</a>
-        <a href="#Additional">Additional</a>
-        <!-- <a href="#Activities">Activities</a> -->
-        <!-- <a href="#Honours & Awards">Honours & Awards</a> -->
-    </div>
+    <div id="main-container">
 
-    <script>
-        // When the user scrolls down 20px from the top of the document, slide down the navbar
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-200px";
-            }
-        }
-    </script>
-
-    <div class="header">
-        <div class="headerColumn">
-            <img class="circular--square" id="head_shot" src="images/head_shot.jpg" height="200">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-icon-text-container">
+                    <div id="header-text-container">
+                        <a href="index.html">Yansen' home!</a>
+                    </div>
+                </div>
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()">☰</button>
+                </div>
+            </div>
         </div>
 
-        <div class="headerColumn">
-            <p class="headertitle">Yansen Zhang（张岩森）</p>
-            <p class="headertext">Love Life. Enjoy Research.</p>
-            <a class="headerButtonAction" href="mailto:yanszhang7-c@my.cityu.edu.hk"><img src="images/email_logo.png"
-                    id="headerButton" height="45px"></a>
-            <a class="headerButtonAction" href="https://github.com/Forrest-Stone"><img src="images/github_logo.png"
-                    id="headerButton" height="45px"></a>
-            <a class="headerButtonAction" href="https://github.com/Forrest-Stone/forrest-stone.github.io/blob/main/files/Yansen%20Zhang_CV.pdf" target="_blank"><img
-                        src="images/resume.png" id="headerButton" height="45px"></a>
-            <a class="headerButtonAction" href="https://github.com/Forrest-Stone/forrest-stone.github.io/blob/main/files/Yansen%20Zhang_transcripts.pdf" target="_blank"><img
-                    src="images/score_logo.png" id="headerButton" height="45px"></a>
-            <a class="headerButtonAction" href="https://scholar.google.com/citations?user=61hz6wYAAAAJ&hl" target="_blank"><img
-                        src="images/google_logo.png" id="headerButton" height="45px"></a>
-            <a class="headerButtonAction" href="https://github.com/Forrest-Stone/forrest-stone.github.io/blob/main/images/wechat.jpg" target="_blank"><img
-                        src="images/WeChat.png" id="headerButton" height="45px"></a>
-        </div>
-        <div class="headerButton">
-        </div>
-    </div>
+        <div id="layout">
 
-    <div class="section" id="Biography">
-        <h1>Biography</h1>
-        <p class="bioline">
-            &nbsp;&nbsp;&nbsp;&nbsp;I am currently a Ph.D Candidate (the third year) at the School of Computing, City University of Hong Kong. My supervisor is Dr. <a class="bioTextLink" href="https://allenjack.github.io/">Chen Ma</a> and I am doing the research about <b>Explainable AI, Data Valuation, LLMs for OR.</b>
-            <br>
+            <div id="layout-menu-container">
+                <div id="layout-menu">
+                    <div class="menu-category">About</div>
+                    <div class="menu-item"><a href="index.html" class="current">Profile</a></div>
+                    <div class="menu-item"><a href="experience.html">Experience</a></div>
+                    <div class="menu-item"><a href="teaching.html">Teaching</a></div>
+                    <div class="menu-category">Research</div>
+                    <div class="menu-item"><a href="publications.html">Publications</a></div>
+                    <div class="menu-item"><a href="services.html">Professional&nbsp;Activities</a></div>
+                </div>
+            </div>
 
-            &nbsp;&nbsp;&nbsp;&nbsp;I received the master's degree from the School of Computer Science and Engineering, Sun Yat-sen University, where I was enrolled in the <i>Outstanding Postgraduate Candidates Exempt from Admission Exam</i> program. My supervisor was Prof. <a class="bioTextLink" href="https://cse.sysu.edu.cn/teacher/LiuYubao">Yubao Liu</a> and I did the research of graph-based sequential recommendation. <br>
+            <div id="layout-content-container">
+                <div id="layout-content">
 
-            &nbsp;&nbsp;&nbsp;&nbsp;I received the bachelor's degree from the School of Software College, Northeastern University, where my academic enlightenment advisor was Prof. <a class="bioTextLink" href="https://guoguibing.github.io/">Guibing Guo</a> and I followed him to research the topic of explainable recommendation. <br>
+                    <div id="text-img-container">
+                        <div id="img-container">
+                            <img src="./images/head_shot.jpg" alt="profile pic" width="147px" height="200px" />
+                        </div>
+                        <div id="text-container">
+                            <h1>Yansen Zhang (张岩森)</h1>
+                            <h3>Ph.D. Candidate</h3>
+                            <p> Computer Science in City University of Hong Kong<br />
+                                Email: yanszhang7-c@my.cityu.edu.hk<br />
+                                <a href="https://scholar.google.com/citations?user=61hz6wYAAAAJ&amp;hl"
+                                    target="_blank">[Google Scholar]</a>
+                                <a href="https://github.com/Forrest-Stone" target="_blank">[GitHub]</a>
+                                <a href="https://github.com/Forrest-Stone/forrest-stone.github.io/blob/main/files/Yansen%20Zhang_CV.pdf"
+                                    target="_blank">[CV]</a>
+                                <a href="https://github.com/Forrest-Stone/forrest-stone.github.io/blob/main/files/Yansen%20Zhang_transcripts.pdf"
+                                    target="_blank">[Transcripts]</a>
+                                <a href="https://github.com/Forrest-Stone/forrest-stone.github.io/blob/main/images/wechat.jpg"
+                                    target="_blank">[WeChat]</a>
+                                <br /><br />
+                                <i>Love Life. Enjoy Research.</i>
+                            </p>
+                        </div>
+                    </div>
 
-            <!-- &nbsp;&nbsp;&nbsp;&nbsp;My research focused on sequence-aware recommendation based on graph neural networks. During my work, I grew increasingly interested in <b>Graph Learning</b> and <b>Sequence Learning</b>, and I plan to pursue deeper research in these topics if I offer my desirable PhD position. If you want to learn more about me, please click on the <a class="psLink" href="./ps.html">Personal Statement</a> page to discover more. -->
-            <!-- <br> -->
-            <br>
-        </p>
-        <!-- <br> -->
+                    <h2>About Me</h2>
+                    <p>
+                        I am currently a third-year Ph.D. candidate at the School of Computing, City University of Hong
+                        Kong,
+                        supervised by Dr. <a href="https://allenjack.github.io/" target="_blank">Chen Ma</a>.
+                        My research focuses on <b>Explainable AI</b>, <b>Data Valuation</b>, and <b>Large Language
+                            Models for Operations Research (LLMs for OR)</b>.
+                    </p>
 
-        <div class="bioLogoColumn">
-            <img src="images/CityU_logo.png" id="bioImage" height="160">
-            <p class="logoline">Ph.D Candidate in Computer Science<br>City University of Hong Kong<br>Hong Kong SAR, China<br>Sep 2022 - Present</p>
-        </div>
+                    <p>
+                        I received my M.S. degree in Software Engineering from the School of Computer Science and
+                        Engineering,
+                        Sun Yat-sen University, where I worked with Prof. <a
+                            href="https://cse.sysu.edu.cn/teacher/LiuYubao" target="_blank">Yubao Liu</a>
+                        on graph-based sequential recommendation. I obtained my B.S. degree in Software Engineering from
+                        the
+                        Software College, Northeastern University, where my academic enlightenment advisor was Prof.
+                        <a href="https://guoguibing.github.io/" target="_blank">Guibing Guo</a>, and I followed him to
+                        work on explainable recommendation.
+                    </p>
 
-        <div class="bioLogoColumn">
-            <img src="images/SYSU_logo.png" id="bioImage" height="160">
-            <p class="logoline">M.S. in Software Engineering<br>Sun Yat-sen University<br>Guangzhou, China<br>Sep 2019 - Jun 2022</p>
-        </div>
-
-        <div class="bioLogoColumn">
-            <img src="images/NEU_logo.png" id="bioImage" height="160">
-            <p class="logoline">B.S. in Software Engineering<br>Northeastern University<br>Shenyang, China<br>Sep 2015 - Jun 2019</p>
-        </div>
-    </div>
-
-    <hr class="heavy">
-
-    <div class="section" id="News">
-        <h1>News</h1>
-        <!-- <h2>Record my research life</h2> -->
-        <div class="projectNoImageTextColumn">
-            <p class="projectline">
-                <li> <b>2025-05</b>: One paper about explainable diversity in recommendation has been accepted in ECMLPKDD 2025! </li>
-                <li> <b>2025-05</b>: One paper about data pruning by Shapley values in recommendation has been accepted in KDD 2025! </li>
-                <li> <b>2025-01</b>: One paper about explainable operation research within large language models has been accepted in ICLR 2025! </li>
-                <li> <b>2025-01</b>: One paper about cross-domain sequential recommendation has been accepted in TOIS 2025! </li>
-                <li> <b>2024-03</b>: One paper about diversity in search and recommendation has been accepted in TKDE 2024! </li>
-            </p>
-        </div>
-    </div>
-
-
-    <hr class="heavy">
-
-    <div class="section" id="Publications">
-        <h1>Publications</h1>
-
-        <h2>Counterfactual Multi-player Bandits for Explainable Recommendation Diversification
-        </h2>
-        <h3>ECMLPKDD 2025</h3>
-        <div class="projectImageColumn">
-            <img src="images/CMB.png" id="projectImage" width="360">
-        </div>
-        <div class="projectTextColumn">
-            <p class="projectline">
-                we propose a \textbf{C}ounterfactual \textbf{M}ulti-player \textbf{B}andits (CMB) method to deliver explainable recommendation diversification across a wide range of diversity metrics. Leveraging a counterfactual framework, our method identifies the factors influencing diversity outcomes. Meanwhile, we adopt the multi-player bandits to optimize the counterfactual optimization objective, making it adaptable to both differentiable and non-differentiable diversity metrics.
-            </p>
-
-            <p class="authorline"> <b>Yansen Zhang</b>, Bowei He, Xiaokun Zhang, Haolun Wu, Zexu Sun, Chen Ma.
-            </p>
-            <a class="projectButtonAction" href="https://arxiv.org/abs/2505.21165">Paper</a>
-            <a class="projectButtonAction" href="https://github.com/Forrest-Stone/CMB">Code</a>
-        </div>
-
-        <h2>Shapley Value-driven Data Pruning for Recommender Systems
-        </h2>
-        <h3>KDD 2025</h3>
-        <!-- <div class="projectImageColumn">
-            <img src="images/SVV.png" id="projectImage" width="360">
-        </div> -->
-        <div class="projectNoImageTextColumn">
-        <!-- <div class="projectTextColumn"， style="max-width: 90%"> -->
-            <p class="projectline">
-                We propose Shapley Value-driven Valuation (SVV), a framework that evaluates interactions based on their objective impact on model training rather than subjective intent assumptions. In SVV, a real-time Shapley value estimation method is devised to quantify each interaction's value based on its contribution to reducing training loss. Afterward, SVV highlights the interactions with high values while downplaying low ones to achieve effective data pruning for recommender systems. In addition, we develop a simulated noise protocol to examine the performance of various denoising approaches systematically. This work shifts denoising from heuristic filtering to principled, model-driven interaction valuation.
-            </p>
-
-            <p class="authorline"> <b>Yansen Zhang</b>, Xiaokun Zhang, Ziqiang Cui, Chen Ma.
-                <!-- <br>[Supported by the National Nature Science Foundation of China.] -->
-            </p>
-            <a class="projectButtonAction" href="https://arxiv.org/abs/2505.22057">Paper</a>
-            <a class="projectButtonAction" href="https://github.com/Forrest-Stone/SVV">Code</a>
-        </div>
-
-
-
-        <h2>Decision Information Meets Large Language Models: The Future of Explainable Operations Research
-        </h2>
-        <h3>ICLR 2025</h3>
-        <div class="projectImageColumn">
-            <img src="images/EOR.png" id="projectImage" width="360">
-        </div>
-        <div class="projectTextColumn">
-            <p class="projectline">
-                We propose a comprehensive framework, Explainable Operations Research (EOR), emphasizing actionable and understandable explanations accompanying optimization. The core of EOR is the concept of Decision Information, which emerges from what-if analysis and focuses on evaluating the impact of complex constraints (or parameters) changes on decision-making. Specifically, we utilize bipartite graphs to quantify the changes in the OR model and adopt LLMs to improve the explanation capabilities.
-            </p>
-
-            <p class="authorline"> <b>Yansen Zhang</b>, Qingcan Kang, Wing Yin Yu, Hailei Gong, Xiaojin Fu, Xiongwei Han, Tao Zhong, Chen Ma.
-            </p>
-            <a class="projectButtonAction" href="https://openreview.net/forum?id=W2dR6rypBQ">Paper</a>
-            <a class="projectButtonAction" href="https://github.com/Forrest-Stone/EOR">Code</a>
-        </div>
-
-
-        <h2>Hierarchical Gating Network for Cross-Domain Sequential Recommendation
-        </h2>
-        <h3>TOIS 2025</h3>
-        <div class="projectImageColumn">
-            <img src="images/HGNCDSR.png" id="projectImage" width="360">
-        </div>
-        <div class="projectTextColumn">
-            <p class="projectline">
-                We propose a Hierarchical Gating Network for Cross-Domain Sequential Recommendation (HGNCDSR). Specifically, we simultaneously train single-domain and cross-domain interaction sequences, utilizing a hierarchical gating network to capture user interest representations in single-domain and cross-domain, respectively. A feature gating and an instance gating are applied respectively to extract user interests at item feature level and instance level.
-            </p>
-
-            <p class="authorline"> Shuliang Wang, Jiabao Zhu, Yi Wang, Chen Ma, Xin Zhao, <b>Yansen Zhang</b>, Ziqiang Yuan, Sijie Ruan.
-            </p>
-            <a class="projectButtonAction" href="https://dl.acm.org/doi/full/10.1145/3715321">Paper</a>
-            <!-- <a class="projectButtonAction" href="https://github.com/Forrest-Stone/SA-GNN">Code</a> -->
-        </div>
-
-
-        <h2>Result Diversification in Search and Recommendation: A Survey
-        </h2>
-        <h3>TKDE 2024</h3>
-        <div class="projectImageColumn">
-            <img src="images/Diversity.png" id="projectImage" width="360">
-        </div>
-        <div class="projectTextColumn">
-            <p class="projectline">
-                In this survey, we are the first to propose a unified taxonomy for classifying the metrics and approaches of diversification in both search and recommendation, which are two of the most extensively researched fields of retrieval systems.
-            </p>
-
-            <p class="authorline"> Haolun Wu*, <b>Yansen Zhang*</b>, Chen Ma, Fuyuan Lyu, Bowei He, Bhaskar Mitra, Xue Liu.
-            </p>
-            <a class="projectButtonAction" href="https://ieeexplore.ieee.org/abstract/document/10490254">Paper</a>
-            <a class="projectButtonAction" href="https://github.com/Forrest-Stone/Diversity">Code</a>
-        </div>
-
-
-        <h2>Learning to Infer User Implicit Preference in Conversational Recommendation
-        </h2>
-        <h3>SIGIR 2022</h3>
-        <div class="projectImageColumn">
-            <img src="images/CRIF.png" id="projectImage" width="360">
-        </div>
-        <div class="projectTextColumn">
-            <p class="projectline">
-                We propose a new CRS framework called Conversational Recommender with Implicit Feedback (CRIF). CRIF formulates the conversational recommendation scheme as a four-phase process consisting of offline representation learning, tracking, decision, and inference. In the inference module, by fully utilizing the relation between users' attribute-level and item-level feedback, our method can explicitly deduce users' implicit preferences.
-            </p>
-
-            <p class="authorline"> Chenhao Hu, Shuhua Huang, <b>Yansen Zhang</b>, Yubao Liu.
-            </p>
-            <a class="projectButtonAction" href="https://dl.acm.org/doi/abs/10.1145/3477495.3531844">Paper</a>
-            <!-- <a class="projectButtonAction" href="https://github.com/Forrest-Stone/SA-GNN">Code</a> -->
-        </div>
-
-
-        <h2>Self-Adaptive Graph Neural
-            Networks for Personalized Sequential Recommendation</h2>
-        <h3>ICONIP 2021</h3>
-        <div class="projectImageColumn">
-            <img src="images/SA-GNN.png" id="projectImage" width="360">
-        </div>
-        <div class="projectTextColumn">
-            <p class="projectline">
-                We proposed a self-adaptive graph neural network with future contexts for sequential recommendation. SA-GNN applied a GNN model within both past and future contexts to model user dynamic interests, and utilized a self-adaptive module and attention module to weaken the negative effect of unsuitable connections in item graph.
-            </p>
-
-            <p class="authorline"> <b>Yansen Zhang</b>, Chenhao Hu, Genan Dai, Weiyang Kong, Yubao Liu.
-                <!-- <br>[Supported by the National Nature Science Foundation of China.] -->
-            </p>
-            <a class="projectButtonAction" href="https://link.springer.com/chapter/10.1007/978-3-030-92270-2_52">Paper</a>
-            <a class="projectButtonAction" href="https://github.com/Forrest-Stone/SA-GNN">Code</a>
-        </div>
-
-
-
-    </div>
-
-
-    <hr class="heavy">
-
-    <div class="section" id="Internship">
-        <h1>Internship</h1>
-
-        <div class="projectNoImageTextColumn">
-            <p class="projectline">
-                <li> <b>Huawei Noah’s Ark Lab: </b> Jun 2024 - Present, Hong Kong SAR, China
+                    <h2>Research Interests</h2>
                     <ul>
-                        <li>Developed a framework for explainable operations research, which utilizes LLMs to provide actionable and understandable explanations for optimization problems, which has been accepted in ICLR 2025.
+                        <li>
+                            <p>Explainable AI and explainable recommendation</p>
                         </li>
-                        <li> Focus on the intersection of operations research and large language models, aiming to enhance the interpretability and usability of optimization solutions. Another work has been subbmitted to NeurIPS 2025.
+                        <li>
+                            <p>Data valuation and denoising for recommender systems</p>
+                        </li>
+                        <li>
+                            <p>Large language models for operations research (LLMs for OR)</p>
+                        </li>
+                        <li>
+                            <p>Graph-based and sequential recommendation</p>
                         </li>
                     </ul>
-                 </li>
-            </p>
-        </div>
 
+                    <h2>News</h2>
+                    <ul>
+                        <li>
+                            <p><b>[05/2025]</b> One paper about explainable diversity in recommendation has been
+                                accepted in ECMLPKDD 2025!</p>
+                        </li>
+                        <li>
+                            <p><b>[05/2025]</b> One paper about data pruning by Shapley values in recommendation has
+                                been accepted in KDD 2025!</p>
+                        </li>
+                        <li>
+                            <p><b>[01/2025]</b> One paper about explainable operations research with large language
+                                models has been accepted in ICLR 2025!</p>
+                        </li>
+                        <li>
+                            <p><b>[01/2025]</b> One paper about cross-domain sequential recommendation has been accepted
+                                in TOIS 2025!</p>
+                        </li>
+                        <li>
+                            <p><b>[03/2024]</b> One paper about diversity in search and recommendation has been accepted
+                                in TKDE 2024!</p>
+                        </li>
+                    </ul>
 
+                </div>
 
-    <hr class="heavy">
+                <div id="footer-container">
+                    <div id="footer">
+                        <div id="footer-text">
 
-    <div class="section" id="Skills">
-        <h1>Skills</h1>
-        <!-- <h2>Record my research life</h2> -->
-        <div class="projectNoImageTextColumn">
-            <p class="projectline">
-                <li> <b>Programming:</b> Python, C/C++, LaTex, Markdown, Matlab. </li>
-                <li> <b>Frameworks/Platforms:</b> PyTorch, Linux, TensorFlow, Keras. </li>
-                <li> <b>Software Tools:</b> Git, Visio, PhotoShop, MS Office. </li>
-                <li> <b>Languages:</b> Chinese (native), English (IELTS 6.5). </li>
-                <!-- <li> <b>Languages:</b> Chinese (native), English (fluent), Japanese (basic). </li> -->
-                <!-- <li> <b>Soft Skills:</b> Self-motivated, Communication, Time management, Teamwork. </li> -->
-                <!-- <li> <b>Hobbies: </b> Basketball, Swimming, Mountain climbing, Reading detective fiction. </li>
-                <li> <b>Activities:</b> Volunteering (6 years), Rope skipping (2nd). </li> -->
-                <!-- <li> <b>Paper Notes:</b> I have read. </li> -->
-            </p>
-        </div>
-    </div>
+                            <div style="width:250px; height:200px; overflow:hidden; margin: 0 auto;">
+                                <!-- 本地 file:// 打开可能看不到，上线后正常 -->
+                                <script type="text/javascript" id="clustrmaps"
+                                    src="//clustrmaps.com/map_v2.js?d=h-s6HdHWmhEXE0GfriLXULJ0KGAJTAPWSUmuQR3PCdo&amp;cl=ffffff&amp;w=a">
+                                    </script>
+                            </div>
 
-    <hr class="heavy">
+                            <span id="last-edited"></span><br />
+                            Powered by <a href="https://github.com/szl2/jemdoc-new-design" target="_blank">jemdoc + new
+                                design</a>.
+                        </div>
+                    </div>
+                </div>
 
-    <div class="section" id="Additional">
-        <h1>Additional</h1>
+            </div> <!-- layout-content-container -->
+        </div> <!-- layout -->
+    </div> <!-- main-container -->
 
-        <h2>Teaching Experience</h2>
-        <div class="projectNoImageTextColumn">
-            <p class="projectline">
-                <li> <b>Teaching Assistant (Head):</b> Semester B 2024/25, <i>GE2324: The Art and Science of Data</i>, City University of Hong Kong.
-                </li>
-                <li> <b>Teaching Assistant (Head):</b> Semester A 2024/25, <i>CS2334: Data Structures for DS</i>, City University of Hong Kong.
-                </li>
-                <li> <b>Teaching Assistant:</b> Semester B 2022/23, 2023/24, <i>GE2324: The Art and Science of Data</i>, City University of Hong Kong.
-                </li>
-                <li> <b>Teaching Assistant:</b> Semester A 2022/23, 2023/24, <i>CS2334: Data Structures for DS</i>, City University of Hong Kong.
-                </li>
-                <li> <b>Teaching Assistant:</b> 2019-2020, <i>Mathematical Analysis</i>, Sun Yat-sen University.
-                </li>
-            </p>
-        </div>
-
-        <h2>Activities</h2>
-
-        <h3>Volunteering</h3>
-        <div class="projectImageColumn">
-            <img src="images/Volunteering.png" id="projectImage" width="300">
-        </div>
-        <div class="projectTextColumn">
-            <p class="projectline">
-                <li>Was a member of <i>Public Relations Department</i> of Northeastern University Volunteers Association.</li>
-                <!-- <li>Organized and participated in many volunteer activities, such as campus marathon, visited to elderly homes, and potted plant exchanges, ....</li> -->
-                <li>Organized and participated in a variety of volunteer activities, including a campus marathon, visits to elderly homes, and a potted plant exchange, among others.</li>
-                <!-- <li>Love to help others and sincerely hope that people can help each other.</li> -->
-            </p>
-        </div>
-
-        <h3>Hobbies</h3>
-        <div class="projectImageColumn">
-            <img src="images/Sports.png" id="projectImage" width="300">
-        </div>
-        <div class="projectTextColumn">
-            <p class="projectline">
-                <li>Love <b>sports</b>. I love hiking, swimming, running, riding. I just want to be a healthy person.</li>
-                </li>
-                <li>Love <b>reading</b>. I enjoy reading detective fiction, and also like to read books about philosophy.
-                </li>
-                <li>Love <b>anime</b>. I love chinese anime now.
-                </li>
-            </p>
-        </div>
-
-        <h2>Honours & Awards</h2>
-        <div class="projectNoImageTextColumn">
-            <p class="projectline">
-                <li> <b>Graduate Student Second-class Academic Scholarship:</b> 2021, Sun Yat-sen University </li>
-                <li> <b>Graduate Student First-class Academic Scholarship:</b> 2020, Sun Yat-sen University </li>
-                <li> <b>Interdisciplinary Contest in Modeling:</b> 2018, international-level, Honorable Mention </li>
-                <!-- <li> <b>First Prize of Mathematical Modeling Contest:</b> 2017, Northeastern University </li> -->
-                <li> <b>Excellent League Member Model:</b> 2017–2018, Northeastern University </li>
-                <li> <b>The Second Prize Scholarship:</b> 2015–2018, Northeastern University </li>
-                <li> <b>National Encouragement Scholarship:</b> 2015-2018, Northeastern University </li>
-                <!-- <li> <b>Outstanding Dormitory:</b> 2015-2018, Northeastern University </li> -->
-                <li> <b>Excellent Students Awards:</b> 2015–2017, Northeastern University </li>
-                <li> <b>28th High School Olympic Chemical Competition:
-                </b>2014, provincial level, Third Prize</li>
-            </p>
-        </div>
-
-        <h2>Contact Information</h2>
-        <div class="projectNoImageTextColumn">
-            <p class="projectline">
-                <li> <b>Phone (HK):</b> (+852) 6589-4045 </li>
-                <li> <b>Phone (China):</b> (+86) 156-2629-3898 </li>
-                <li> <b>Email:</b> yanszhang7-c@my.cityu.edu.hk </li>
-                <!-- <li> <b>Address:</b> Xiaoguwei Island, Panyu District, Guangzhou, 510006, P. R. China </li> -->
-            </p>
-        </div>
-    </div>
-
-    <div class="footer">
-        <a class="topButtonAction" href="#top">BACK TO TOP</a>
-    </div>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
