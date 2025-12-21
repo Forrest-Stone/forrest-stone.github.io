@@ -125,7 +125,7 @@ div#layout-content-container {
 /* 实际内容 */
 div#layout-content {
     min-height: calc(100vh - 240px);
-    padding-top: 16px;
+    padding-top: 28px;
     padding-bottom: 25px;
     padding-left: 35px;
     padding-right: 35px;
@@ -435,6 +435,13 @@ div#img-container {
     margin-right: 20px;          /* 图片和文字之间的空隙 */
 }
 
+/* 主页头像尺寸：按比例缩放，高度固定，宽度自适应 */
+img.profile-photo {
+    height: 220px;   /* 你可以改成 200 / 240 看自己喜欢 */
+    width: auto;     /* 宽度按比例自动算，不会被压扁 */
+    display: block;
+}
+
 /* 右侧文字块 */
 div#text-container {
     flex: 1 1 auto;
@@ -538,7 +545,7 @@ div#text-container h3 {
     div#layout-content {
         padding-left: 20px;
         padding-right: 20px;
-        padding-top: 16px;
+        padding-top: 28px;
         padding-bottom: 15px;
         min-height: calc(100vh - 190px);
     }
