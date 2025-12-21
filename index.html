@@ -8,6 +8,7 @@
     <link rel="icon" href="./images/symbol_logo.svg">
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/main.js"></script>
     <title>Yansen Zhang's Homepage</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML"
         async="async"></script>
@@ -35,7 +36,9 @@ MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
         <div id="layout">
 
             <div id="layout-menu-container">
-                <div id="layout-menu"></div> <!-- 导航由 JS 自动生成 -->
+                <div id="layout-menu">
+                    <script>writeNav('index');</script>
+                </div>
             </div>
 
             <div id="layout-content-container">
@@ -150,7 +153,7 @@ MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
         </div> <!-- layout -->
     </div> <!-- main-container -->
 
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 </body>
 
 </html>

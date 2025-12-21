@@ -8,6 +8,7 @@
     <link rel="icon" href="./images/symbol_logo.svg">
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="js/main.js"></script>
     <title>Teaching - Yansen Zhang</title>
 </head>
 
@@ -30,7 +31,9 @@
         <div id="layout">
 
             <div id="layout-menu-container">
-                <div id="layout-menu"></div> <!-- 导航由 JS 自动生成 -->
+                <div id="layout-menu">
+                    <script>writeNav('teaching');</script>
+                </div>
             </div>
 
             <div id="layout-content-container">
@@ -93,7 +96,7 @@
         </div> <!-- layout -->
     </div> <!-- main-container -->
 
-    <script src="js/main.js"></script>
+    <!-- <script src="js/main.js"></script> -->
 </body>
 
 </html>

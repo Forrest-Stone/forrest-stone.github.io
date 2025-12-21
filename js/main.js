@@ -4,7 +4,7 @@
 var NAV_BREAKPOINT = 992;
 
 // 统一管理所有导航项，只在这里改一次就行
-// id 对应各页面 <body data-page="...">
+// id 对应各页面 current 标记使用
 var NAV_ITEMS = [
     { id: "index",        href: "index.html",        label: "About" },
     { id: "experience",   href: "experience.html",   label: "Experience" },
@@ -13,14 +13,9 @@ var NAV_ITEMS = [
     { id: "activities",   href: "services.html",     label: "Activities" }
 ];
 
-// 根据 NAV_ITEMS 构建左侧导航
-function buildNav() {
-    var menu = document.getElementById("layout-menu");
-    if (!menu) return;
-
-    // 当前页面 id，从 <body data-page="..."> 读取
-    var currentId = document.body.dataset.page || "";
-
+// 在 HTML 解析时，直接向 #layout-menu 里写入导航 HTML
+// currentId 由每个页面传入，例如 writeNav('index')
+function writeNav(currentId) {
     var html = "";
     for (var i = 0; i < NAV_ITEMS.length; i++) {
         var item = NAV_ITEMS[i];
@@ -32,8 +27,7 @@ function buildNav() {
                 '>' + item.label + '</a>' +
             '</div>\n';
     }
-
-    menu.innerHTML = html;
+    document.write(html);
 }
 
 // 小屏幕打开 / 关闭导航栏
@@ -59,7 +53,7 @@ function openNav() {
     }
 }
 
-// 预留的关闭函数
+// 预留的关闭函数（暂时没用到）
 function closeNav() {
     var menu = document.getElementById("layout-menu");
     if (!menu) return;
@@ -102,8 +96,5 @@ function updateLastEdited() {
         " " + hh + ":" + mm + ".";
 }
 
-// DOM 加载完成后：生成导航 + 更新时间
-document.addEventListener("DOMContentLoaded", function () {
-    buildNav();
-    updateLastEdited();
-});
+// DOM 加载完成后：只负责更新时间
+document.addEventListener("DOMContentLoaded", updateLastEdited);
