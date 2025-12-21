@@ -8,10 +8,10 @@ var NAV_BREAKPOINT = 992;
 var NAV_ITEMS = [
     { id: "index",        href: "index.html",        label: "About" },
     { id: "experience",   href: "experience.html",   label: "Experience" },
-    { id: "publications", href: "publications.html", label: "Publications" },
+    { id: "publication", href: "publication.html", label: "Publication" },
     { id: "teaching",     href: "teaching.html",     label: "Teaching" },
-    { id: "services",     href: "services.html",     label: "Services" },
-    { id: "activities",   href: "activities.html",     label: "Activities" }
+    { id: "service",     href: "service.html",     label: "Service" },
+    { id: "activity",   href: "activity.html",     label: "Activity" }
 ];
 
 // 在 HTML 解析时，直接向 #layout-menu 里写入导航 HTML
