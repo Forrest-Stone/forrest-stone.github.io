@@ -203,15 +203,15 @@ div.menu-item {
 
 /* 桌面端：第一个菜单项（About）离顶部稍微远一点 */
 @media screen and (min-width: 993px) {
-    #layout-menu .menu-item:first-child {
-        margin-top: 35px;  /* 根据喜好调节 */
+    #layout-menu .menu-item:first-of-type {
+        margin-top: 28px;  /* 根据喜好调节 */
     }
 }
 
-/* 小屏端：第一个菜单项紧贴顶部 */
+/* 小屏端：第一个菜单项的顶部间距（如果你想紧贴顶部，可以改成 0） */
 @media screen and (max-width: 992px) {
-    #layout-menu .menu-item:first-child {
-        margin-top: 15px;
+    #layout-menu .menu-item:first-of-type {
+        margin-top: 15px;  /* 想紧贴顶部就写 0 */
     }
 }
 
