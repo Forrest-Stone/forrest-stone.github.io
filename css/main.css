@@ -656,3 +656,54 @@ div#member p {
         max-width: 100%;
     }
 }
+
+/* ================= 复制提示相关 ================= */
+
+/* 复制成功的小提示气泡 */
+.copy-toast {
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translate(-50%, 10px);
+    background: #24292e;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2000; /* 比 header 高就行 */
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+}
+
+.copy-toast.show {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+/* Email 复制用的小链接样式 */
+.copy-link {
+    margin-left: 2px;
+    font-size: 15px;          /* 和正文同字号，基线对齐 */
+    line-height: 1;           /* 不要撑高整行行高 */
+    color: #6a737d;           /* 比正文淡一点的灰色 */
+    cursor: pointer;
+    vertical-align: baseline; /* 明确按基线对齐 */
+}
+
+.copy-link:hover {
+    color: #0366d6;           /* 悬停变蓝，和其他链接统一 */
+    text-decoration: underline;
+}
+
+/* 顶部 profile 里邮箱链接的专门样式：更像正文，而不是蓝色引用链接 */
+#text-container p a[href^="mailto:"] {
+    color: #24292e;           /* 黑/深灰，和正文一致 */
+    font-weight: 500;         /* 稍微加粗一点 */
+    text-decoration: none;
+}
+
+#text-container p a[href^="mailto:"]:hover {
+    color: #0366d6;           /* 悬停时才变蓝 */
+    text-decoration: underline;
+}

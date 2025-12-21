@@ -8,9 +8,10 @@ var NAV_BREAKPOINT = 992;
 var NAV_ITEMS = [
     { id: "index",        href: "index.html",        label: "About" },
     { id: "experience",   href: "experience.html",   label: "Experience" },
-    { id: "teaching",     href: "teaching.html",     label: "Teaching" },
     { id: "publications", href: "publications.html", label: "Publications" },
-    { id: "activities",   href: "services.html",     label: "Activities" }
+    { id: "teaching",     href: "teaching.html",     label: "Teaching" },
+    { id: "services",     href: "services.html",     label: "Services" },
+    { id: "activities",   href: "activities.html",     label: "Activities" }
 ];
 
 // 在 HTML 解析时，直接向 #layout-menu 里写入导航 HTML
@@ -94,6 +95,64 @@ function updateLastEdited() {
     el.textContent =
         "Last edited on " + m + " " + day + suffix(day) + " " + y +
         " " + hh + ":" + mm + ".";
+}
+
+/* ============ 一键复制邮箱 ============ */
+
+// 统一的小提示气泡
+function showToast(message) {
+    var toast = document.getElementById("copy-toast");
+    if (!toast) {
+        toast = document.createElement("div");
+        toast.id = "copy-toast";
+        toast.className = "copy-toast";
+        document.body.appendChild(toast);
+    }
+    toast.textContent = message;
+    toast.classList.add("show");
+
+    // 如果之前有定时器，先清掉
+    if (toast._hideTimer) {
+        clearTimeout(toast._hideTimer);
+    }
+    toast._hideTimer = setTimeout(function () {
+        toast.classList.remove("show");
+    }, 1500); // 1.5s 后淡出
+}
+
+// 通用复制函数
+function copyToClipboard(text) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+        // 现代浏览器
+        navigator.clipboard.writeText(text).then(function () {
+            showToast("Email copied to clipboard.");
+        }).catch(function () {
+            fallbackCopyText(text);
+        });
+    } else {
+        // 旧浏览器走兜底
+        fallbackCopyText(text);
+    }
+}
+
+// 旧浏览器的兜底方案
+function fallbackCopyText(text) {
+    var input = document.createElement("input");
+    input.value = text;
+    document.body.appendChild(input);
+    input.select();
+    try {
+        document.execCommand("copy");
+        showToast("Email copied to clipboard.");
+    } catch (e) {
+        showToast("Your browser does not support automatic copy. Please copy it manually.");
+    }
+    document.body.removeChild(input);
+}
+
+// 给 index 页面用的复制邮箱函数
+function copyEmail() {
+    copyToClipboard("yanszhang7-c@my.cityu.edu.hk");
 }
 
 // DOM 加载完成后：只负责更新时间
