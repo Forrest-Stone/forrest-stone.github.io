@@ -125,7 +125,7 @@ div#layout-content-container {
 /* 实际内容 */
 div#layout-content {
     min-height: calc(100vh - 240px);
-    padding-top: 28px;
+    padding-top: 28px;        /* 顶部空白稍大一点 */
     padding-bottom: 25px;
     padding-left: 35px;
     padding-right: 35px;
@@ -175,7 +175,7 @@ a:hover, a:hover > tt {
     text-decoration: none;
 }
 
-/* 菜单分类标题 */
+/* 菜单分类标题（目前你不用 menu-category，但留着也没关系） */
 div.menu-category {
     margin-top: 16px;
     padding-top: 8px;
@@ -187,7 +187,7 @@ div.menu-category {
     border-top: 0.8px solid #e1e4e8;
 }
 
-/* 第一个分类（About）不要上边线、不留额外空白 */
+/* 第一个分类不要上边线、不留额外空白 */
 div.menu-category:first-of-type {
     border-top: none;
     margin-top: 0;
@@ -199,6 +199,20 @@ div.menu-item {
     font-size: 16px;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+/* 桌面端：第一个菜单项（About）离顶部稍微远一点 */
+@media screen and (min-width: 993px) {
+    #layout-menu .menu-item:first-child {
+        margin-top: 28px;    /* 想更大/更小可改这个值 */
+    }
+}
+
+/* 小屏端：第一个菜单项紧贴顶部 */
+@media screen and (max-width: 992px) {
+    #layout-menu .menu-item:first-child {
+        margin-top: 15px;
+    }
 }
 
 div#toptitle {
@@ -437,8 +451,8 @@ div#img-container {
 
 /* 主页头像尺寸：按比例缩放，高度固定，宽度自适应 */
 img.profile-photo {
-    height: 220px;   /* 你可以改成 200 / 240 看自己喜欢 */
-    width: auto;     /* 宽度按比例自动算，不会被压扁 */
+    height: 220px;   /* 可微调 200/240 等 */
+    width: auto;
     display: block;
 }
 

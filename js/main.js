@@ -3,32 +3,63 @@
 // 和 CSS 中的断点保持一致：<= 992px 视为“小屏幕”
 var NAV_BREAKPOINT = 992;
 
-// 小屏幕打开 / 关闭左侧导航栏
+// 统一管理所有导航项，只在这里改一次就行
+// id 对应各页面 <body data-page="...">
+var NAV_ITEMS = [
+    { id: "index",        href: "index.html",        label: "About" },
+    { id: "experience",   href: "experience.html",   label: "Experience" },
+    { id: "teaching",     href: "teaching.html",     label: "Teaching" },
+    { id: "publications", href: "publications.html", label: "Publications" },
+    { id: "activities",   href: "services.html",     label: "Activities" }
+];
+
+// 根据 NAV_ITEMS 构建左侧导航
+function buildNav() {
+    var menu = document.getElementById("layout-menu");
+    if (!menu) return;
+
+    // 当前页面 id，从 <body data-page="..."> 读取
+    var currentId = document.body.dataset.page || "";
+
+    var html = "";
+    for (var i = 0; i < NAV_ITEMS.length; i++) {
+        var item = NAV_ITEMS[i];
+        var isCurrent = (item.id === currentId);
+        html +=
+            '<div class="menu-item">' +
+                '<a href="' + item.href + '"' +
+                    (isCurrent ? ' class="current"' : '') +
+                '>' + item.label + '</a>' +
+            '</div>\n';
+    }
+
+    menu.innerHTML = html;
+}
+
+// 小屏幕打开 / 关闭导航栏
 function openNav() {
     var menu = document.getElementById("layout-menu");
     if (!menu) return;
 
-    // 大屏幕不需要汉堡逻辑
+    // 大屏幕不需要折叠导航
     if (window.innerWidth > NAV_BREAKPOINT) {
         return;
     }
 
-    // 这次点击前，导航是否是关闭状态？
     var willOpen = !menu.classList.contains("open");
 
-    // 切换 open class（控制 display:block / none）
     menu.classList.toggle("open");
 
-    // 如果是“打开导航栏”，自动滚动到页面顶部，保证导航栏可见
+    // 如果是这次要“打开”，则滚回顶部，保证导航能看到
     if (willOpen) {
         window.scrollTo({
             top: 0,
-            behavior: "smooth"   // 平滑滚动，看起来更自然
+            behavior: "smooth"
         });
     }
 }
 
-// 预留的关闭函数（目前没地方直接调用，但保留没坏处）
+// 预留的关闭函数
 function closeNav() {
     var menu = document.getElementById("layout-menu");
     if (!menu) return;
@@ -71,5 +102,8 @@ function updateLastEdited() {
         " " + hh + ":" + mm + ".";
 }
 
-// DOM 加载完成后自动更新 footer 时间
-document.addEventListener("DOMContentLoaded", updateLastEdited);
+// DOM 加载完成后：生成导航 + 更新时间
+document.addEventListener("DOMContentLoaded", function () {
+    buildNav();
+    updateLastEdited();
+});
