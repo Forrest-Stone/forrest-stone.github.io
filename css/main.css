@@ -436,7 +436,7 @@ span.string > * { color: #606060; }
 /* 头像 + 文字的横向布局（桌面端） */
 div#text-img-container {
     display: flex;
-    align-items: flex-start;    /* 文字和头像顶部对齐 */
+    align-items: stretch;        /* 左右两块等高，方便顶/底对齐 */
     padding: 0;
     margin: 0 0 24px 0;
 }
@@ -456,33 +456,52 @@ img.profile-photo {
     display: block;
 }
 
-/* 右侧文字块 */
+/* 右侧文字块：和照片一样高，并上下分布内容 */
 div#text-container {
     flex: 1 1 auto;
     padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;               /* 与图片高度一致，方便 slogan 贴底 */
 }
 
-/* 姓名标题 */
-div#text-container h1 {
+/* 上半部分容器 */
+.profile-main {
+    /* 预留扩展 */
+}
+
+/* 姓名标题（这里调字号） */
+.profile-main h1 {
     border-bottom: none;
-    margin: 0 0 6px 0;
+    margin: 0 0 8px 0;           /* 名字和 PhD 之间留一点空间 */
     padding: 0;
-    font-size: 32px;
-    line-height: 1.2;
+    font-size: 20px;             /* 想换大小只改这里 */
+    line-height: 1.5;
 }
 
-/* 备用 h2，不加下划线（目前没用） */
-div#text-container h2 {
-    border-bottom: none;
+/* Ph.D. Candidate 这一行 */
+.profile-title {
+    margin: 0 0 0px 0;           /* PhD 和下面 affiliation 之间距离 */
+}
+
+/* 院系 + Email 这一段 */
+.profile-affiliation {
+    margin: 0 0 0px 0;           /* 和下面链接之间稍微留一点空隙 */
+}
+
+/* 链接那一行的间距与对齐 */
+.profile-links {
+    margin-top: 0;               /* 紧贴上面的 Email 段落 */
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* slogan 放在右侧块的最下方 */
+.profile-motto {
     margin: 0;
     padding: 0;
-}
-
-/* PhD 那一行 */
-div#text-container h3 {
-    border-bottom: none;
-    margin: 0 0 8px 0;
-    padding: 0;
+    font-size: 16px;
 }
 
 /* ================= 汉堡按钮 ================= */
@@ -584,10 +603,19 @@ div#text-container h3 {
         margin-bottom: 10px;
     }
 
+    /* 小屏：文字高度自适应 */
+    div#text-container {
+        height: auto;
+    }
+
     div#text-container h1,
     div#text-container h2,
     div#text-container h3 {
         text-align: center;
+    }
+
+    .profile-motto {
+        margin-top: 8px;
     }
 }
 
@@ -683,8 +711,8 @@ div#member p {
 
 /* Email 复制用的小链接样式 */
 .copy-link {
-    margin-left: 2px;
-    font-size: 15px;          /* 和正文同字号，基线对齐 */
+    margin-left: 4px;
+    font-size: 14px;          /* 比正文略小一点 */
     line-height: 1;           /* 不要撑高整行行高 */
     color: #6a737d;           /* 比正文淡一点的灰色 */
     cursor: pointer;

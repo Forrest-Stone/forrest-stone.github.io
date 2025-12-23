@@ -14,7 +14,7 @@
         async="async"></script>
     <script type="text/x-mathjax-config">
 MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
-</script>
+    </script>
 </head>
 
 <body>
@@ -44,29 +44,43 @@ MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
             <div id="layout-content-container">
                 <div id="layout-content">
 
+                    <!-- 头像 + 文字 -->
                     <div id="text-img-container">
                         <div id="img-container">
                             <img src="./images/head_shot.jpg" alt="profile pic" class="profile-photo" />
                         </div>
+
                         <div id="text-container">
-                            <h1>Yansen Zhang (张岩森)</h1>
-                            <h3>Ph.D. Candidate</h3>
-                            <p> Department of Computer Science
-                                <br />
-                                City University of Hong Kong (CityUHK)<br />
-                                Email:
-                                <a href="mailto:yanszhang7-c@my.cityu.edu.hk">yanszhang7-c@my.cityu.edu.hk</a>
-                                <a href="javascript:void(0)" class="copy-link" onclick="copyEmail()"
-                                    aria-label="Copy email to clipboard">[Copy]</a>
-                                <br />
-                                <a href="https://scholar.google.com/citations?user=61hz6wYAAAAJ&amp;hl"
-                                    target="_blank">[Google Scholar]</a>
-                                <a href="https://github.com/Forrest-Stone" target="_blank">[GitHub]</a>
-                                <a href="files/Yansen Zhang_CV.pdf" target="_blank">[CV]</a>
-                                <!-- <a href="https://github.com/Forrest-Stone/forrest-stone.github.io/blob/main/files/Yansen%20Zhang_transcripts.pdf"
-                                    target="_blank">[Transcripts]</a> -->
-                                <a href="images/wechat.jpg" target="_blank">[WeChat]</a>
-                                <br /><br />
+                            <!-- 上半部分：名字、头衔、院系、邮箱、链接 -->
+                            <div class="profile-main">
+                                <h1>Yansen Zhang (张岩森)</h1>
+
+                                <p class="profile-title">
+                                    Ph.D. Candidate
+                                </p>
+
+                                <p class="profile-affiliation">
+                                    Department of Computer Science<br />
+                                    City University of Hong Kong (CityUHK)<br />
+                                    Hong Kong SAR<br />
+                                    Email:
+                                    <a href="mailto:yanszhang7-c@my.cityu.edu.hk">yanszhang7-c@my.cityu.edu.hk</a>
+                                    <a href="javascript:void(0)" class="copy-link" onclick="copyEmail()"
+                                        aria-label="Copy email to clipboard">[Copy]</a>
+                                </p>
+
+                                <p class="profile-links">
+                                    <a href="https://scholar.google.com/citations?user=61hz6wYAAAAJ&amp;hl"
+                                        target="_blank">[Google Scholar]</a>
+                                    <a href="https://github.com/Forrest-Stone" target="_blank">[GitHub]</a>
+                                    <a href="files/Yansen Zhang_CV.pdf" target="_blank">[CV]</a>
+                                    <!-- <a href="files/Yansen Zhang_transcripts.pdf" target="_blank">[Transcripts]</a> -->
+                                    <a href="images/wechat.jpg" target="_blank">[WeChat]</a>
+                                </p>
+                            </div>
+
+                            <!-- 下半部分：slogan，与照片底部对齐 -->
+                            <p class="profile-motto">
                                 <i>Love Life. Enjoy Research.</i>
                             </p>
                         </div>
@@ -85,8 +99,8 @@ MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
                     <p>
                         I received my M.S. degree in Software Engineering from the School of Computer Science and
                         Engineering,
-                        Sun Yat-sen University, where I supervised by Prof. <a
-                            href="https://cse.sysu.edu.cn/teacher/LiuYubao" target="_blank">Yubao Liu</a>
+                        Sun Yat-sen University, where I was supervised by Prof.
+                        <a href="https://cse.sysu.edu.cn/teacher/LiuYubao" target="_blank">Yubao Liu</a>
                         on graph-based sequential recommendation. I obtained my B.S. degree in Software Engineering from
                         the
                         Software College, Northeastern University, where my academic enlightenment advisor was Prof.
@@ -102,9 +116,6 @@ MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
                         <li>
                             <p>Data valuation and large language models for operations research</p>
                         </li>
-                        <!-- <li>
-                            <p>Large language models for operations research (LLMs for OR)</p>
-                        </li> -->
                         <li>
                             <p>Graph neural networks and sequential recommendation</p>
                         </li>
@@ -157,7 +168,6 @@ MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "AMS" } } });
         </div> <!-- layout -->
     </div> <!-- main-container -->
 
-    <!-- <script src="js/main.js"></script> -->
 </body>
 
 </html>
