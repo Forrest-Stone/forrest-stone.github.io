@@ -62,7 +62,7 @@ div#header-text-container {
     margin: 0;
     height: auto;
     color: #24292e;
-    font-size: 22px;
+    font-size: 21px;
 }
 
 div#header-text-container a {
@@ -476,7 +476,7 @@ div#text-container {
     border-bottom: none;
     margin: 0 0 8px 0;           /* 名字和 PhD 之间留一点空间 */
     padding: 0;
-    font-size: 20px;             /* 想换大小只改这里 */
+    font-size: 21px;             /* 想换大小只改这里 */
     line-height: 1.5;
 }
 
