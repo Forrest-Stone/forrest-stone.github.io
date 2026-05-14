@@ -9,6 +9,11 @@ body {
     margin: 0;
 }
 
+:root {
+    --layout-menu-width: 280px;
+    --menu-group-width: 145px;
+}
+
 div#main-container {
     min-height: 100vh;
     background: white;
@@ -81,6 +86,17 @@ div#main {
     align-items: center;
 }
 
+@media screen and (min-width: 993px) {
+    div#header {
+        justify-content: flex-start;
+        padding-left: calc((var(--layout-menu-width) - var(--menu-group-width)) / 2);
+    }
+
+    div#main {
+        display: none;
+    }
+}
+
 /* ================= 总体布局 ================= */
 
 div#layout {
@@ -98,8 +114,8 @@ div#layout-menu {
     padding: 0 0 25px 0;
     background: #f6f8fa;
     border-right: 0.8px solid #e1e4e8;
-    width: 280px;
-    min-width: 280px;
+    width: var(--layout-menu-width);
+    min-width: var(--layout-menu-width);
     height: calc(100vh - 70px);
     position: fixed;
     top: 70px;
@@ -114,9 +130,9 @@ div#layout-menu {
 
 /* 内容区域容器（桌面端） */
 div#layout-content-container {
-    width: calc(100vw - 280px);
+    width: calc(100vw - var(--layout-menu-width));
     min-height: calc(100vh - 70px);
-    margin-left: 280px;
+    margin-left: var(--layout-menu-width);
     background: none;
     text-align: left;
     display: block;
@@ -180,10 +196,15 @@ div.menu-category {
     margin-top: 16px;
     padding-top: 8px;
     padding-bottom: 0.1em;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 18px;
     line-height: 2;
+    width: fit-content;
+    min-width: var(--menu-group-width);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
     border-top: 0.8px solid #e1e4e8;
 }
 
@@ -197,8 +218,13 @@ div.menu-category:first-of-type {
 /* 菜单项 */
 div.menu-item {
     font-size: 16px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    width: fit-content;
+    min-width: var(--menu-group-width);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
 }
 
 /* 桌面端：第一个菜单项（About）离顶部稍微远一点 */
@@ -282,10 +308,47 @@ h3 {
 }
 
 .pub-tag {
-    color: #586069;
+    color: #2f6f5e;
     font-weight: 700;
     margin-right: 0.35em;
     white-space: nowrap;
+}
+
+.dated-list {
+    --date-col: 150px;
+    --date-gap: 12px;
+    padding-left: 0;
+    list-style: none;
+    list-style-type: none;
+}
+
+.dated-list.year-list {
+    --date-col: 150px;
+}
+
+.dated-list.day-list {
+    --date-col: 150px;
+}
+
+.dated-list li {
+    display: grid;
+    grid-template-columns: var(--date-col) minmax(0, 1fr);
+    column-gap: var(--date-gap);
+    align-items: baseline;
+    margin-bottom: 0.65em;
+}
+
+.dated-list p {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.dated-time {
+    color: #6a737d;
+    font-size: 0.94em;
+    font-weight: 600;
+    white-space: nowrap;
+    text-align: right;
 }
 
 /* 内容区域第一个标题去掉额外 margin，减少大片空白 */
@@ -301,7 +364,7 @@ p {
     margin-top: 0.0em;
     margin-bottom: 0.8em;
     padding: 0;
-    text-align: justify;
+    text-align: left;
 }
 
 pre {
@@ -364,7 +427,12 @@ dd > *:first-child {
 
 ul {
     list-style-position: outside;
-    list-style-type: square;
+    list-style-type: disc;
+}
+
+li::marker {
+    color: #586069;
+    font-size: 0.78em;
 }
 
 p + ul, p + ol {
@@ -602,6 +670,17 @@ div#text-container {
         padding-top: 0;
     }
 
+    div.menu-category,
+    div.menu-item {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: auto;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+
     div#layout-menu.open {
         display: block;
     }
@@ -636,6 +715,16 @@ div#text-container {
         padding-right: 20px;
         padding-top: 16px;
         padding-bottom: 15px;
+    }
+
+    .dated-list li {
+        display: block;
+    }
+
+    .dated-time {
+        display: block;
+        margin-bottom: 2px;
+        text-align: left;
     }
 
     /* 小屏幕：头像和文字上下排、居中 */
