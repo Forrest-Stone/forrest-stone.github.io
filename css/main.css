@@ -263,6 +263,31 @@ h3 {
     border-bottom: none;
 }
 
+.publication-content h2 {
+    margin-top: 1.2em;
+}
+
+.publication-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.publication-list li {
+    margin-bottom: 1em;
+}
+
+.publication-list p {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.pub-tag {
+    color: #586069;
+    font-weight: 700;
+    margin-right: 0.35em;
+    white-space: nowrap;
+}
+
 /* 内容区域第一个标题去掉额外 margin，减少大片空白 */
 #layout-content h1:first-child,
 #layout-content h2:first-child,
@@ -502,6 +527,29 @@ div#text-container {
     margin: 0;
     padding: 0;
     font-size: 16px;
+}
+
+.news-list {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.news-list li {
+    margin-bottom: 0.45em;
+}
+
+.news-list p {
+    display: grid;
+    grid-template-columns: 78px 1fr;
+    column-gap: 8px;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.news-date {
+    color: #586069;
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 /* ================= 汉堡按钮 ================= */

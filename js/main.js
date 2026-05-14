@@ -8,7 +8,7 @@ var NAV_BREAKPOINT = 992;
 var NAV_ITEMS = [
     { id: "index",        href: "index.html",        label: "About" },
     { id: "experience",   href: "experience.html",   label: "Experience" },
-    { id: "publication", href: "publication.html", label: "Publication" },
+    { id: "publication", href: "publication.html", label: "Publications" },
     { id: "teaching",     href: "teaching.html",     label: "Teaching" },
     { id: "service",     href: "service.html",     label: "Service" },
     { id: "activity",   href: "activity.html",     label: "Activity" }
