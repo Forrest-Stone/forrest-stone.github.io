@@ -12,6 +12,7 @@ body {
 :root {
     --layout-menu-width: 280px;
     --menu-group-width: 145px;
+    --section-content-indent: 16px;
 }
 
 div#main-container {
@@ -293,8 +294,16 @@ h3 {
     margin-top: 1.2em;
 }
 
+#layout-content > p {
+    margin-left: var(--section-content-indent);
+}
+
+#layout-content > ul:not(.publication-list):not(.dated-list):not(.news-list) {
+    padding-left: calc(var(--section-content-indent) + 1.2em);
+}
+
 .publication-list {
-    padding-left: 0;
+    padding-left: var(--section-content-indent);
     list-style-type: none;
 }
 
@@ -315,19 +324,19 @@ h3 {
 }
 
 .dated-list {
-    --date-col: 150px;
+    --date-col: 135px;
     --date-gap: 12px;
-    padding-left: 0;
+    padding-left: calc(var(--date-col) + var(--date-gap) + var(--section-content-indent));
     list-style: none;
     list-style-type: none;
 }
 
-.dated-list.year-list {
-    --date-col: 150px;
+.dated-list.activity-list {
+    --date-col: 105px;
 }
 
-.dated-list.day-list {
-    --date-col: 150px;
+.dated-list.compact-list {
+    --date-col: 54px;
 }
 
 .dated-list li {
@@ -336,11 +345,16 @@ h3 {
     column-gap: var(--date-gap);
     align-items: baseline;
     margin-bottom: 0.65em;
+    margin-left: calc(-1 * (var(--date-col) + var(--date-gap)));
 }
 
 .dated-list p {
     margin-bottom: 0;
     text-align: left;
+}
+
+.dated-content p + p {
+    margin-top: 0.35em;
 }
 
 .dated-time {
@@ -598,7 +612,7 @@ div#text-container {
 }
 
 .news-list {
-    padding-left: 0;
+    padding-left: var(--section-content-indent);
     list-style-type: none;
 }
 
@@ -719,6 +733,11 @@ div#text-container {
 
     .dated-list li {
         display: block;
+        margin-left: 0;
+    }
+
+    .dated-list {
+        padding-left: var(--section-content-indent);
     }
 
     .dated-time {
