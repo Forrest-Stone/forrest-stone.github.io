@@ -316,6 +316,14 @@ h3 {
     text-align: left;
 }
 
+.publication-list b {
+    font-weight: 600;
+}
+
+.publication-list u b {
+    font-weight: 700;
+}
+
 .pub-tag {
     color: #2f6f5e;
     font-weight: 700;
