@@ -316,18 +316,15 @@ h3 {
     text-align: left;
 }
 
-.publication-list b {
-    font-weight: 600;
-}
-
-.publication-list u b {
-    font-weight: 700;
+.publication-note {
+    color: #586069;
+    font-size: 15px;
 }
 
 .pub-tag {
     color: #2f6f5e;
     font-weight: 700;
-    margin-right: 0.35em;
+    margin-right: 0.22em;
     white-space: nowrap;
 }
 
@@ -640,6 +637,31 @@ div#text-container {
     color: #586069;
     font-weight: 600;
     white-space: nowrap;
+}
+
+.past-news {
+    margin-left: var(--section-content-indent);
+    margin-top: 0.45em;
+}
+
+.past-news summary {
+    color: #586069;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.past-news summary::marker {
+    color: #586069;
+}
+
+.past-news[open] summary {
+    margin-bottom: 0.45em;
+}
+
+.past-news-list {
+    padding-left: 0;
 }
 
 /* ================= 汉堡按钮 ================= */
