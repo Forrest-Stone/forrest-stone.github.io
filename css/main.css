@@ -639,6 +639,10 @@ div#text-container {
     white-space: nowrap;
 }
 
+.news-link-group {
+    white-space: nowrap;
+}
+
 .past-news {
     margin-left: var(--section-content-indent);
     margin-top: 0.45em;
